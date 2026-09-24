@@ -1,0 +1,68 @@
+ idx                name                type          output_shape  params  trainable
+   0              Conv2d              Conv2d     (1, 32, 256, 256)     864        864
+   1         BatchNorm2d         BatchNorm2d     (1, 32, 256, 256)      64         64
+   2                ReLU                ReLU     (1, 32, 256, 256)       0          0
+   3              Conv2d              Conv2d     (1, 32, 256, 256)    9216       9216
+   4         BatchNorm2d         BatchNorm2d     (1, 32, 256, 256)      64         64
+   5              Conv2d              Conv2d     (1, 32, 256, 256)      96         96
+   6         BatchNorm2d         BatchNorm2d     (1, 32, 256, 256)      64         64
+   7                ReLU                ReLU     (1, 32, 256, 256)       0          0
+   8           MaxPool2d           MaxPool2d     (1, 32, 128, 128)       0          0
+   9       ResidualBlock       ResidualBlock     (1, 32, 128, 128)   10368      10368
+  10              Conv2d              Conv2d     (1, 64, 128, 128)   18432      18432
+  11         BatchNorm2d         BatchNorm2d     (1, 64, 128, 128)     128        128
+  12                ReLU                ReLU     (1, 64, 128, 128)       0          0
+  13              Conv2d              Conv2d     (1, 64, 128, 128)   36864      36864
+  14         BatchNorm2d         BatchNorm2d     (1, 64, 128, 128)     128        128
+  15              Conv2d              Conv2d     (1, 64, 128, 128)    2048       2048
+  16         BatchNorm2d         BatchNorm2d     (1, 64, 128, 128)     128        128
+  17                ReLU                ReLU     (1, 64, 128, 128)       0          0
+  18           MaxPool2d           MaxPool2d       (1, 64, 64, 64)       0          0
+  19       ResidualBlock       ResidualBlock       (1, 64, 64, 64)   57728      57728
+  20              Conv2d              Conv2d      (1, 128, 64, 64)   73728      73728
+  21         BatchNorm2d         BatchNorm2d      (1, 128, 64, 64)     256        256
+  22                ReLU                ReLU      (1, 128, 64, 64)       0          0
+  23              Conv2d              Conv2d      (1, 128, 64, 64)  147456     147456
+  24         BatchNorm2d         BatchNorm2d      (1, 128, 64, 64)     256        256
+  25              Conv2d              Conv2d      (1, 128, 64, 64)    8192       8192
+  26         BatchNorm2d         BatchNorm2d      (1, 128, 64, 64)     256        256
+  27                ReLU                ReLU      (1, 128, 64, 64)       0          0
+  28           MaxPool2d           MaxPool2d      (1, 128, 32, 32)       0          0
+  29       ResidualBlock       ResidualBlock      (1, 128, 32, 32)  230144     230144
+  30              Conv2d              Conv2d      (1, 128, 32, 32)  147456     147456
+  31         BatchNorm2d         BatchNorm2d      (1, 128, 32, 32)     256        256
+  32                ReLU                ReLU      (1, 128, 32, 32)       0          0
+  33              Conv2d              Conv2d      (1, 128, 32, 32)  147456     147456
+  34         BatchNorm2d         BatchNorm2d      (1, 128, 32, 32)     256        256
+  35                ReLU                ReLU      (1, 128, 32, 32)       0          0
+  36           MaxPool2d           MaxPool2d      (1, 128, 16, 16)       0          0
+  37       ResidualBlock       ResidualBlock      (1, 128, 16, 16)  295424     295424
+  38              Conv2d              Conv2d      (1, 256, 16, 16)  294912     294912
+  39         BatchNorm2d         BatchNorm2d      (1, 256, 16, 16)     512        512
+  40                ReLU                ReLU      (1, 256, 16, 16)       0          0
+  41              Conv2d              Conv2d      (1, 256, 16, 16)  589824     589824
+  42         BatchNorm2d         BatchNorm2d      (1, 256, 16, 16)     512        512
+  43              Conv2d              Conv2d      (1, 256, 16, 16)   32768      32768
+  44         BatchNorm2d         BatchNorm2d      (1, 256, 16, 16)     512        512
+  45                ReLU                ReLU      (1, 256, 16, 16)       0          0
+  46            Identity            Identity      (1, 256, 16, 16)       0          0
+  47       ResidualBlock       ResidualBlock      (1, 256, 16, 16)  919040     919040
+  48   AdaptiveAvgPool2d   AdaptiveAvgPool2d        (1, 256, 8, 8)       0          0
+  49 CNNFeatureExtractor CNNFeatureExtractor        (1, 256, 8, 8) 1512704    1512704
+  50                LSTM                LSTM       <class 'tuple'> 2230272    2230272
+  51              Linear              Linear           (1, 8, 128)   32896      32896
+  52                Tanh                Tanh           (1, 8, 128)       0          0
+  53              Linear              Linear             (1, 8, 1)     129        129
+  54             Softmax             Softmax             (1, 8, 1)       0          0
+  55   AdditiveAttention   AdditiveAttention [(1, 256), (1, 8, 1)]   33025      33025
+  56              Linear              Linear              (1, 128)   32896      32896
+  57                ReLU                ReLU              (1, 128)       0          0
+  58             Dropout             Dropout              (1, 128)       0          0
+  59              Linear              Linear               (1, 64)    8256       8256
+  60                ReLU                ReLU               (1, 64)       0          0
+  61             Dropout             Dropout               (1, 64)       0          0
+  62              Linear              Linear                (1, 4)     260        260
+
+Total params: 3817413
+Trainable params: 3817413
+Non-trainable params: 0

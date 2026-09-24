@@ -1,0 +1,2 @@
+Ordering,Best_Epoch,Total_Epochs_Run,Best_Validation_Accuracy,Final_Best_Model_Validation_Accuracy,Final_Validation_Loss,Batch_Size,Learning_Rate,Max_Epochs,Min_Epochs,Patience,Validation_Ratio
+original_view,34,44,99.42226890756302,99.42226890756302,0.036774198610742555,16,0.0001,80,40,10,0.2

@@ -1,0 +1,21 @@
+{
+  "fold": 2,
+  "status": "complete",
+  "final_metrics": {
+    "fold": 2,
+    "best_epoch": 9,
+    "accuracy": 0.9947478991596639,
+    "micro_accuracy": 0.9947478991596639,
+    "macro_class_accuracy": 0.9945610607703594,
+    "precision_macro": 0.9946268514403156,
+    "precision_micro": 0.9947478991596639,
+    "recall_macro": 0.9945610607703594,
+    "recall_micro": 0.9947478991596639,
+    "f1_macro": 0.9945658724727046,
+    "f1_micro": 0.9947478991596639,
+    "auc_macro": 0.9999425176853273,
+    "auc_micro": 0.9999169551398992,
+    "loss": 0.016231715303509177,
+    "runtime_minutes": 145.75329066912334
+  }
+}

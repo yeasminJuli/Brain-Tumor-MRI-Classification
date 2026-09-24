@@ -1,0 +1,25 @@
+{
+  "checkpoint": "C:\\user\\juli\\thesis\\original_file\\othr folders\\training_outputs_proposed_model_orgnl\\training_outputs\\hybrid_cnn_bilstm_attention_final.pth",
+  "checkpoint_sha256": "286e566ea8551580abb5e1cb26b62b01556d8c46338f40d8d5b7083707fac2a5",
+  "model_source": "C:\\user\\juli\\thesis\\original_file\\all_codes\\train_model_withCustomized_cnn.py",
+  "test_directory": "C:\\user\\juli\\thesis\\original_file\\othr folders\\preprocessed_testt",
+  "classes": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "class_mapping_note": "Alphabetical ImageFolder order; checkpoint contains no class_names metadata.",
+  "images": 1311,
+  "errors": 7,
+  "accuracy": 0.9946605644546148,
+  "device": "cuda",
+  "checkpoint_epoch": 80,
+  "color_scale": [
+    0,
+    0.9995817542076111
+  ],
+  "selection": "First correctly classified file in alphabetical order per class; all errors.",
+  "interpretation": "Original direct NCHW view creates eight channel groups (32 channels each), not spatial columns. Weights are contextual and not class-specific tumor localization.",
+  "validation": "Strict checkpoint load; all attention weights finite, nonnegative and sum to one."
+}

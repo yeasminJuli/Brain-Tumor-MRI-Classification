@@ -1,0 +1,79 @@
+PROPOSED MODEL - 5-FOLD STRATIFIED CROSS-VALIDATION
+================================================================================
+
+Dataset: PREPROCESSED_TRAINN_AUGMENTED
+Total images: 28560
+Classes: ['glioma', 'meningioma', 'notumor', 'pituitary']
+Number of folds: 5
+Seed: 42
+Epochs: 80
+Batch size: 32
+Learning rate: 0.0001
+Device: cuda
+
+FOLD-WISE RESULTS
+--------------------------------------------------------------------------------
+ fold  accuracy  micro_accuracy  macro_class_accuracy  macro_precision  micro_precision  macro_recall  micro_recall  macro_f1  micro_f1  macro_auc  micro_auc  best_epoch  best_val_accuracy  validation_samples
+    1  0.991071        0.991071              0.990683         0.990824         0.991071      0.990683      0.991071  0.990751  0.991071   0.999793   0.999826          15           0.991071                5712
+    2  0.990371        0.990371              0.990276         0.989967         0.990371      0.990276      0.990371  0.990115  0.990371   0.999749   0.999792          20           0.990371                5712
+    3  0.993522        0.993522              0.993332         0.993412         0.993522      0.993332      0.993522  0.993368  0.993522   0.999903   0.999908          28           0.993522                5712
+    4  0.992122        0.992122              0.991824         0.991962         0.992122      0.991824      0.992122  0.991870  0.992122   0.999895   0.999887          37           0.992122                5712
+    5  0.993172        0.993172              0.992931         0.992971         0.993172      0.992931      0.993172  0.992951  0.993172   0.999895   0.999910          27           0.993172                5712
+
+MEAN / SD / SE
+--------------------------------------------------------------------------------
+accuracy
+  Mean = 0.99205182
+  SD   = 0.00134246
+  SE   = 0.00060037
+
+micro_accuracy
+  Mean = 0.99205182
+  SD   = 0.00134246
+  SE   = 0.00060037
+
+macro_class_accuracy
+  Mean = 0.99180915
+  SD   = 0.00134118
+  SE   = 0.00059979
+
+macro_precision
+  Mean = 0.99182732
+  SD   = 0.00144101
+  SE   = 0.00064444
+
+micro_precision
+  Mean = 0.99205182
+  SD   = 0.00134246
+  SE   = 0.00060037
+
+macro_recall
+  Mean = 0.99180915
+  SD   = 0.00134118
+  SE   = 0.00059979
+
+micro_recall
+  Mean = 0.99205182
+  SD   = 0.00134246
+  SE   = 0.00060037
+
+macro_f1
+  Mean = 0.99181109
+  SD   = 0.00138962
+  SE   = 0.00062146
+
+micro_f1
+  Mean = 0.99205182
+  SD   = 0.00134246
+  SE   = 0.00060037
+
+macro_auc
+  Mean = 0.99984680
+  SD   = 0.00007116
+  SE   = 0.00003183
+
+micro_auc
+  Mean = 0.99986448
+  SD   = 0.00005301
+  SE   = 0.00002371
+

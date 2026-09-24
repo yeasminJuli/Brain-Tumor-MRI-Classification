@@ -1,0 +1,13 @@
+{
+  "experiment": "VGG16 5-Fold Stratified CV",
+  "dataset": "C:\\user\\juli\\thesis\\original_file\\othr folders\\PREPROCESSED_TRAINN_AUGMENTED",
+  "fixed_fold_file": "C:\\user\\juli\\thesis\\original_file\\othr folders\\CV_RESULTS_PROPOSED_MODEL\\FIXED_5_FOLD_SPLITS.npz",
+  "seed": 42,
+  "folds": 5,
+  "epochs": 50,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "pretrained": true,
+  "device": "cuda",
+  "runtime_minutes": 936.3233941713969
+}

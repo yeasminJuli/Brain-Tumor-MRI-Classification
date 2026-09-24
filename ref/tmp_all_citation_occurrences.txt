@@ -1,0 +1,319 @@
+===== [1] 3 occurrences =====
+
+om, manwar@juniv.edu ORCID ID: MMA (0000-0001-5159-1865) Abstract—Accurate brain tumor classification from magnetic including tumor type, anatomical location, size, growth rate, resonance imaging (MRI) is important for early diagnosis and andbiologicalbehavior[1].Withoutearlydetectionandappro- treatment planning. However, automated classification remains priatemanagement,braintumorsmayleadtoneurologicalim- challenging because tumor appearances are heterogeneous, vi- pairment,reducedqualityoflife,ormortality[2].Patientsmay sually similar classes may overlap, and many deep learn
+
+w slowly and are less likely to invade surrounding tissues, whereas malignant tumors tend to I. INTRODUCTION grow more rapidly, infiltrate adjacent structures, and require Brain tumors are serious neurological conditions caused by timely clinical intervention [1]. Tumors are also graded based abnormal and uncontrolled cellular growth within or around on cellular abnormality, proliferation rate, and invasiveness, brain tissue. Their clinical impact depends on several factors, with higher-grade tumors generally associated with more aggressive behavior [7]. Among commonly studied
+
+bnormalities.Amongthesemodal- eral high-performing methods depend on large pretrained net- ities, MRI is widely preferred because it provides high- worksorensembledesigns,whichmayincreasecomputational resolution soft-tissue contrast without ionizing radiation [1]. cost and reduce practical deployability [20]. Moreover, inter- MRI sequences such as T1-weighted, T2-weighted, contrast- pretabilityisoftentreatedonlyasapost-hocvisualizationstep, enhancedT1-weighted,andfluid-attenuatedinversionrecovery with limited evidence that predictions are based on clinically (FLAIR) images pro
+
+===== [2] 1 occurrences =====
+
+behavior[1].Withoutearlydetectionandappro- treatment planning. However, automated classification remains priatemanagement,braintumorsmayleadtoneurologicalim- challenging because tumor appearances are heterogeneous, vi- pairment,reducedqualityoflife,ormortality[2].Patientsmay sually similar classes may overlap, and many deep learning models lack interpretability. This study proposes an explain- present with symptoms such as headache, visual disturbance, able attention-guided CNN–BiLSTM framework for multi-class seizures, cognitive impairment, or progressive neurological brain t
+
+===== [3] 2 occurrences =====
+
+explain- present with symptoms such as headache, visual disturbance, able attention-guided CNN–BiLSTM framework for multi-class seizures, cognitive impairment, or progressive neurological brain tumor MRI classification. A standardized preprocessing dysfunction[3].Therefore,accuratetumorclassificationisim- pipelineisfirstappliedtoimproveimageconsistencyandreduce portantforsupportingtreatmentplanning,reducingdiagnostic irrelevantbackgroundvariation.Aresidualconvolutionalneural delay, and improving patient management. network then extracts spatial feature maps, which are reshaped
+
+feature extraction. complementary visual explanations of model predictions. CNN-based and transfer learning approaches have achieved The principal contributions of this study are summarized as promising performance in brain tumor classification tasks follows: [3], [16]. However, conventional CNNs primarily learn local • Toproposeaspatialcontext-awareCNN–BiLSTMframe- spatialpatternsthroughconvolutionalreceptivefieldsandmay work for multi-class brain tumor MRI classification, in not explicitly capture contextual relationships among distant which residual CNN feature maps are res
+
+===== [4] 1 occurrences =====
+
+m associated with substantial mortality and long-term disability, further emphasizes the most informative spatial-contextual fea- and their incidence varies across populations and reporting tures before classification. The framework was evaluated on a systems [4]. Early diagnosis is clinically important because public brain MRI dataset containing 7,023 images from four classes:glioma,meningioma,pituitarytumor,andno-tumor.Data timely tumor identification can support treatment planning augmentation was applied only to the training subset, while and may reduce the risk of delayed
+
+===== [5] 1 occurrences =====
+
+ne clinical practice, radiological images are interpreted by augmentation-induced leakage. On the predefined testing set, physicians or radiologists to identify tumor type and guide the proposed model achieved 99.47% accuracy, 0.9951 macro- patient management [5]. However, manual interpretation may precision, 0.9942 macro-recall, and 0.9946 macro-F1-score. Five- foldcross-validationshowedstableperformance,withanaverage be time-consuming and can vary depending on image quality, accuracy of 98.86 ± 0.35%. Compared with VGG16, ResNet50, tumor complexity, and expert experience. Pr
+
+===== [6] 1 occurrences =====
+
+chieved have reported high diagnostic agreement for general brain the strongest macro-averaged performance. Grad-CAM++ and tumor assessment, but agreement may decrease in complex LIME provided complementary visual explanations, indicating or mixed tumor cases [6]. These challenges have motivated that the model generally focused on tumor-relevant anatomical regions. External multi-center validation and expert clinical the development of computer-aided diagnosis systems that assessmentremainnecessarybeforepracticalclinicaldeployment. can assist clinicians by providing objective,
+
+===== [7] 1 occurrences =====
+
+normal and uncontrolled cellular growth within or around on cellular abnormality, proliferation rate, and invasiveness, brain tissue. Their clinical impact depends on several factors, with higher-grade tumors generally associated with more aggressive behavior [7]. Among commonly studied tumor model behavior and improving transparency in medical image categories, gliomas originate from glial cells, meningiomas analysis [17], [18]. arise from the meninges, and pituitary tumors occur within or Recent studies have improved brain tumor MRI classi- near the pituitary gland [8]–[10].
+
+===== [8] 1 occurrences =====
+
+mproving transparency in medical image categories, gliomas originate from glial cells, meningiomas analysis [17], [18]. arise from the meninges, and pituitary tumors occur within or Recent studies have improved brain tumor MRI classi- near the pituitary gland [8]–[10]. Although these tumor types fication using CNNs, transfer learning, ensemble learning, differ in origin and clinical behavior, their MRI appearances attention mechanisms, and explainable AI. CNN-based and may overlap because of variations in size, location, contrast, transfer learning models have shown strong fea
+
+===== [9] 0 occurrences =====
+
+===== [10] 1 occurrences =====
+
+ving transparency in medical image categories, gliomas originate from glial cells, meningiomas analysis [17], [18]. arise from the meninges, and pituitary tumors occur within or Recent studies have improved brain tumor MRI classi- near the pituitary gland [8]–[10]. Although these tumor types fication using CNNs, transfer learning, ensemble learning, differ in origin and clinical behavior, their MRI appearances attention mechanisms, and explainable AI. CNN-based and may overlap because of variations in size, location, contrast, transfer learning models have shown strong feature-
+
+===== [11] 1 occurrences =====
+
+tions in size, location, contrast, transfer learning models have shown strong feature-learning texture, and boundary clarity. This visual similarity makes ability, while attention-based and XAI-guided methods have reliable automated classification challenging [11]. improved region emphasis and prediction transparency [16]– Medical imaging plays a central role in brain tumor di- [19]. However, several limitations remain. Many CNN-based agnosis, treatment planning, and follow-up assessment. Sev- methods mainly learn local spatial features and do not explic- eral imaging modalitie
+
+===== [12] 2 occurrences =====
+
+t predictions are based on clinically (FLAIR) images provide complementary information about meaningful tumor regions rather than irrelevant background anatomicalstructures,edema,tumorboundaries,andabnormal patterns or dataset-specific artifacts. tissueregions[12].However,MRIinterpretationremainstime- Toaddresstheselimitations,thisstudyproposesanexplain- consuming and depends on expert experience. Variations in able attention-guided CNN–BiLSTM framework for multi- tumor size, shape, texture, boundary clarity, anatomical loca- class brain tumor MRI classification. The framework 
+
+pe, texture, boundary clarity, anatomical loca- class brain tumor MRI classification. The framework uses a tion,imagecontrast,noise,andintensitydistributioncanmake standardized preprocessing pipeline, extracts spatial feature reliable classification difficult [12]–[14]. maps through a residual CNN, reshapes these maps into Machine learning (ML) and deep learning (DL) methods ordered spatial sequences, and applies a BiLSTM module to have shown considerable potential for automated brain tumor capture bidirectional contextual dependencies among spatial analysis using MRI data [15]
+
+===== [13] 0 occurrences =====
+
+===== [14] 1 occurrences =====
+
+exture, boundary clarity, anatomical loca- class brain tumor MRI classification. The framework uses a tion,imagecontrast,noise,andintensitydistributioncanmake standardized preprocessing pipeline, extracts spatial feature reliable classification difficult [12]–[14]. maps through a residual CNN, reshapes these maps into Machine learning (ML) and deep learning (DL) methods ordered spatial sequences, and applies a BiLSTM module to have shown considerable potential for automated brain tumor capture bidirectional contextual dependencies among spatial analysis using MRI data [15]. In 
+
+===== [15] 1 occurrences =====
+
+into Machine learning (ML) and deep learning (DL) methods ordered spatial sequences, and applies a BiLSTM module to have shown considerable potential for automated brain tumor capture bidirectional contextual dependencies among spatial analysis using MRI data [15]. In particular, convolutional regions.Anadditiveattentionmechanismthenemphasizesthe neural networks (CNNs) have been widely used because they most informative spatial-contextual features before classifica- canautomaticallylearnhierarchicalspatialfeaturesfrommed- tion. Finally, Grad-CAM++ and LIME are used to provide i
+
+===== [16] 2 occurrences =====
+
+ have shown strong feature-learning texture, and boundary clarity. This visual similarity makes ability, while attention-based and XAI-guided methods have reliable automated classification challenging [11]. improved region emphasis and prediction transparency [16]– Medical imaging plays a central role in brain tumor di- [19]. However, several limitations remain. Many CNN-based agnosis, treatment planning, and follow-up assessment. Sev- methods mainly learn local spatial features and do not explic- eral imaging modalities, including computed tomography itly model contextual rela
+
+re extraction. complementary visual explanations of model predictions. CNN-based and transfer learning approaches have achieved The principal contributions of this study are summarized as promising performance in brain tumor classification tasks follows: [3], [16]. However, conventional CNNs primarily learn local • Toproposeaspatialcontext-awareCNN–BiLSTMframe- spatialpatternsthroughconvolutionalreceptivefieldsandmay work for multi-class brain tumor MRI classification, in not explicitly capture contextual relationships among distant which residual CNN feature maps are reshaped 
+
+===== [17] 2 occurrences =====
+
+s on several factors, with higher-grade tumors generally associated with more aggressive behavior [7]. Among commonly studied tumor model behavior and improving transparency in medical image categories, gliomas originate from glial cells, meningiomas analysis [17], [18]. arise from the meninges, and pituitary tumors occur within or Recent studies have improved brain tumor MRI classi- near the pituitary gland [8]–[10]. Although these tumor types fication using CNNs, transfer learning, ensemble learning, differ in origin and clinical behavior, their MRI appearances attention mech
+
+HODOLOGY tumor classification and reported 98.52% accuracy. Houssein Thissectiondescribestheproposedmethodologyformulti- et al. [23] applied SHAP with ResNet50 and reported 99.41% class brain tumor MRI classification. The framework was accuracy,whileNaziretal.[17]incorporatedXAIintoaCNN- designed to address three key requirements of medical image- based tumor prediction framework. These studies show that based decision support: accurate classification, robust feature explanation methods can improve the transparency of deep representation, and interpretable prediction. To achiev
+
+===== [18] 4 occurrences =====
+
+everal factors, with higher-grade tumors generally associated with more aggressive behavior [7]. Among commonly studied tumor model behavior and improving transparency in medical image categories, gliomas originate from glial cells, meningiomas analysis [17], [18]. arise from the meninges, and pituitary tumors occur within or Recent studies have improved brain tumor MRI classi- near the pituitary gland [8]–[10]. Although these tumor types fication using CNNs, transfer learning, ensemble learning, differ in origin and clinical behavior, their MRI appearances attention mechanisms
+
+Bothsegmentationand Contextualdependencymodelingandexplainability toclassifyandsegmentbrain classificationwereperformed, werenotsufficientlyaddressed;performancemay tumorsinMRIscans. yielding97.3%accuracyonthe degradewithnoisyimages. Figsharedataset. M.M.etal.[18] UsedResNet50withGrad-CAMto Achieved98.52%accuracyand Grad-CAMheatmapsmayremaincoarse; classifybraintumorsandvisualize introducedheatmap-basedvisual explanationqualityandcross-datasetgeneralization class-discriminativeregions. interpretation. werelimited. Islametal.[20] Combined9-layerCNN,13-layer Improvedclassificatio
+
+singly modeling, attention-based feature refinement, and dual ex- important in medical image analysis because high classifica- plainability for multi-class brain tumor MRI classification. tion performance alone is insufficient for clinical trust. M. M. et al. [18] used ResNet50 with Grad-CAM for brain III. METHODOLOGY tumor classification and reported 98.52% accuracy. Houssein Thissectiondescribestheproposedmethodologyformulti- et al. [23] applied SHAP with ResNet50 and reported 99.41% class brain tumor MRI classification. The framework was accuracy,whileNaziretal.[17]incorpora
+
+gle 95.00% MRI-basedgeneralizationandexplicitcontextual mechanism modelingremainlimited. D´ıaz-Pernasetal.[19] MultiscaleCNNfor Figshare 97.30% Contextualdependencymodelingandexplainability classificationand werenotsufficientlyaddressed. segmentation M.M.etal.[18] ResNet50withGrad-CAM Kaggle 98.52% Grad-CAMimprovesinterpretability,butheatmap localizationmayremaincoarse. Islametal.[20] CNN,CNN-LSTM,and Kaggle 98.82% Ensemble-basedlearningimprovesaccuracybut ensemblestrategy increasescomputationalcost. Albalawietal.[22] ModifiedVGGwithfederated Figshare,SARTAJ, 98.00% Attention-g
+
+===== [19] 4 occurrences =====
+
+ity. This visual similarity makes ability, while attention-based and XAI-guided methods have reliable automated classification challenging [11]. improved region emphasis and prediction transparency [16]– Medical imaging plays a central role in brain tumor di- [19]. However, several limitations remain. Many CNN-based agnosis, treatment planning, and follow-up assessment. Sev- methods mainly learn local spatial features and do not explic- eral imaging modalities, including computed tomography itly model contextual relationships among spatially separated (CT),single-photonemission
+
+ed that sequential dence on handcrafted feature extraction by learning hierarchi- modeling can improve classification performance compared calspatialrepresentationsdirectlyfrommedicalimages.D´ıaz- withsomeconventionalCNNvariants.However,manyCNN– Pernas et al. [19] proposed a multiscale CNN framework for LSTM-based studies provide limited explanation of how two- brain tumor classification and segmentation, reporting 97.3% dimensional spatial feature maps are converted into meaning- accuracyontheFigsharedataset.Rasheedetal.[29]developed ful sequential representations. In medical 
+
+provedthe MainlyevaluatedonCTimages;MRI-based combinesresiduallearningand focusontumor-relevantregions generalizationandexplicitcontextualfeature attentionmechanismstoenhance andachieved95%accuracy. modelingremainlimited. tumorclassification. D´ıaz-Pernasetal.[19] CreatedamultiscaleCNNsystem Bothsegmentationand Contextualdependencymodelingandexplainability toclassifyandsegmentbrain classificationwereperformed, werenotsufficientlyaddressed;performancemay tumorsinMRIscans. yielding97.3%accuracyonthe degradewithnoisyimages. Figsharedataset. M.M.etal.[18] UsedResNet50withGrad-CAMto
+
+ALCOMPARISONWITHSELECTEDBRAINTUMORCLASSIFICATIONSTUDIES Authors Methodology Dataset Reported KeyLimitation Accuracy Aryaetal.[21] ResLinkwithattention Kaggle 95.00% MRI-basedgeneralizationandexplicitcontextual mechanism modelingremainlimited. D´ıaz-Pernasetal.[19] MultiscaleCNNfor Figshare 97.30% Contextualdependencymodelingandexplainability classificationand werenotsufficientlyaddressed. segmentation M.M.etal.[18] ResNet50withGrad-CAM Kaggle 98.52% Grad-CAMimprovesinterpretability,butheatmap localizationmayremaincoarse. Islametal.[20] CNN,CNN-LSTM,and Kaggle 98.82% Ensemble-ba
+
+===== [20] 5 occurrences =====
+
+rming methods depend on large pretrained net- ities, MRI is widely preferred because it provides high- worksorensembledesigns,whichmayincreasecomputational resolution soft-tissue contrast without ionizing radiation [1]. cost and reduce practical deployability [20]. Moreover, inter- MRI sequences such as T1-weighted, T2-weighted, contrast- pretabilityisoftentreatedonlyasapost-hocvisualizationstep, enhancedT1-weighted,andfluid-attenuatedinversionrecovery with limited evidence that predictions are based on clinically (FLAIR) images provide complementary information about meaningfu
+
+an impor- Ensemble learning has also been used to improve classi- tantroleinearlybraintumorclassificationresearch.Theseap- fication stability and predictive performance in brain tumor proachestypicallyinvolveimagepreprocessing,segmentation, analysis.Islametal.[20]developedahybridframeworkusing handcrafted feature extraction, and classification using tradi- a 9-layer CNN, a 13-layer CNN, and a CNN–LSTM model, tionallearningalgorithms.Anantharajanetal.[28]usedadap- reporting 98.47% accuracy for the CNN–LSTM component tive contrast enhancement, median filtering, fuzzy c-means and 
+
+ons,man- Hybrid architectures that combine CNNs with recurrent ually engineered features may not generalize well to hetero- models have been explored to capture richer feature rela- geneous MRI datasets. tionships in medical image classification. Islam et al. [20] CNN-baseddeeplearningmethodshavereducedthedepen- included a CNN–LSTM model and showed that sequential dence on handcrafted feature extraction by learning hierarchi- modeling can improve classification performance compared calspatialrepresentationsdirectlyfrommedicalimages.D´ıaz- withsomeconventionalCNNvariants.However
+
+esNet50withGrad-CAMto Achieved98.52%accuracyand Grad-CAMheatmapsmayremaincoarse; classifybraintumorsandvisualize introducedheatmap-basedvisual explanationqualityandcross-datasetgeneralization class-discriminativeregions. interpretation. werelimited. Islametal.[20] Combined9-layerCNN,13-layer Improvedclassification Ensembledesignincreasescomputationalcostand CNN,andCNN-LSTMmodels performanceandobtainedan mayrestrictreal-timeorresource-limitedclinical throughanensemblestrategy. accuracyof98.82%onaKaggle deployment. dataset. Albalawietal.[22] usedfederatedlearningand Supporteddist
+
+Nfor Figshare 97.30% Contextualdependencymodelingandexplainability classificationand werenotsufficientlyaddressed. segmentation M.M.etal.[18] ResNet50withGrad-CAM Kaggle 98.52% Grad-CAMimprovesinterpretability,butheatmap localizationmayremaincoarse. Islametal.[20] CNN,CNN-LSTM,and Kaggle 98.82% Ensemble-basedlearningimprovesaccuracybut ensemblestrategy increasescomputationalcost. Albalawietal.[22] ModifiedVGGwithfederated Figshare,SARTAJ, 98.00% Attention-guidedcontextualfeaturerefinementwas andtransferlearning Br35H notexplicitlyincluded. Housseinetal.[23] ResNet50withSHAP Kag
+
+===== [21] 3 occurrences =====
+
+attention and re- fer learning architectures, including ResNet50, InceptionV3, ported 98.4% accuracy on the BraTS 2023 dataset. Saravanan TABLEI SUMMARYOFSELECTEDRECENTSTUDIESONBRAINTUMORCLASSIFICATION Authors(Year) Methodology Strength KeyLimitation Aryaetal.[21] IntroducedResLink,which Attentionmechanismimprovedthe MainlyevaluatedonCTimages;MRI-based combinesresiduallearningand focusontumor-relevantregions generalizationandexplicitcontextualfeature attentionmechanismstoenhance andachieved95%accuracy. modelingremainlimited. tumorclassification. D´ıaz-Pernasetal.[19] Createdamu
+
+l feature modeling and optimization, they may involve Attention mechanisms have been introduced in brain tumor classificationtohelpmodelsemphasizediagnosticallyrelevant depth, using pretrained architectures, and combining multiple image regions. Arya and Gaud [21] proposed ResLink, which classifierscanimprovebraintumorclassificationperformance. integrates residual connections and attention mechanisms to However, these strategies do not fully address the spatial improve tumor-related feature localization and reported 95% heterogeneity of tumor regions, which may appear irregu- a
+
+0123 Proposedvs.DenseNet121 Pairedt-test 2.63 0.0582 0.0582 Proposedvs.EfficientNet-B3 Pairedt-test 4.38 0.0119 0.0238 TABLEXI CONTEXTUALCOMPARISONWITHSELECTEDBRAINTUMORCLASSIFICATIONSTUDIES Authors Methodology Dataset Reported KeyLimitation Accuracy Aryaetal.[21] ResLinkwithattention Kaggle 95.00% MRI-basedgeneralizationandexplicitcontextual mechanism modelingremainlimited. D´ıaz-Pernasetal.[19] MultiscaleCNNfor Figshare 97.30% Contextualdependencymodelingandexplainability classificationand werenotsufficientlyaddressed. segmentation M.M.etal.[18] ResNet50withGrad-CAM Kaggle 98
+
+===== [22] 3 occurrences =====
+
+NN,13-layer Improvedclassification Ensembledesignincreasescomputationalcostand CNN,andCNN-LSTMmodels performanceandobtainedan mayrestrictreal-timeorresource-limitedclinical throughanensemblestrategy. accuracyof98.82%onaKaggle deployment. dataset. Albalawietal.[22] usedfederatedlearningand Supporteddistributedlearningand Didnotexplicitlyintegrateattention-guided transferlearninginconjunction achieved98%accuracyusing contextualfeaturerefinement;heterogeneousMRI withmodifiedVGG16for Figshare,SARTAJ,andBr35H acquisitionmayaffectrobustness. MRI-basedcategorization. datasets. Houssei
+
+earning, advanced feature extraction, and hy- ysis, image preprocessing, training-set augmentation, CNN– brid representation methods to improve brain tumor classifi- BiLSTM–Attention-based classification, and explainability- cation robustness. Albalawi et al. [22] combined a modified based interpretation. First, the predefined brain MRI dataset VGG16 model with federated learning and transfer learning was divided into training and testing subsets, and class using Figshare, SARTAJ, and Br35H datasets, reporting 98% distribution was analyzed. Second, exploratory analysis was accu
+
+.[18] ResNet50withGrad-CAM Kaggle 98.52% Grad-CAMimprovesinterpretability,butheatmap localizationmayremaincoarse. Islametal.[20] CNN,CNN-LSTM,and Kaggle 98.82% Ensemble-basedlearningimprovesaccuracybut ensemblestrategy increasescomputationalcost. Albalawietal.[22] ModifiedVGGwithfederated Figshare,SARTAJ, 98.00% Attention-guidedcontextualfeaturerefinementwas andtransferlearning Br35H notexplicitlyincluded. Housseinetal.[23] ResNet50withSHAP Kaggle 99.41% Robustnessanddataset-dependencyrequirefurther explainability validation. Kukadiyaetal.[24] EnsembleoffiveCNNswith Figsharerep
+
+===== [23] 3 occurrences =====
+
+plicitlyintegrateattention-guided transferlearninginconjunction achieved98%accuracyusing contextualfeaturerefinement;heterogeneousMRI withmodifiedVGG16for Figshare,SARTAJ,andBr35H acquisitionmayaffectrobustness. MRI-basedcategorization. datasets. Housseinetal.[23] UsedResNet50withSHAP-based Reportedhighclassification Furtherrobustnessanalysisisneededtoreduce explainabilityforbraintumor accuracyof99.41%andprovided overfittinganddataset-dependencyconcerns. classification. feature-attribution-based interpretation. Kukadiyaetal.[24] Comparedanensemblemodelwith Demonstratedcomparati
+
+ication. tion performance alone is insufficient for clinical trust. M. M. et al. [18] used ResNet50 with Grad-CAM for brain III. METHODOLOGY tumor classification and reported 98.52% accuracy. Houssein Thissectiondescribestheproposedmethodologyformulti- et al. [23] applied SHAP with ResNet50 and reported 99.41% class brain tumor MRI classification. The framework was accuracy,whileNaziretal.[17]incorporatedXAIintoaCNN- designed to address three key requirements of medical image- based tumor prediction framework. These studies show that based decision support: accurate classificat
+
+emble-basedlearningimprovesaccuracybut ensemblestrategy increasescomputationalcost. Albalawietal.[22] ModifiedVGGwithfederated Figshare,SARTAJ, 98.00% Attention-guidedcontextualfeaturerefinementwas andtransferlearning Br35H notexplicitlyincluded. Housseinetal.[23] ResNet50withSHAP Kaggle 99.41% Robustnessanddataset-dependencyrequirefurther explainability validation. Kukadiyaetal.[24] EnsembleoffiveCNNswith Figsharerepository 97.00% Ensembledesignincreasescomputational boostingmodels complexityanddeploymentcost. Vureetal.[25] ResNet18withGAN-based BraTS2021 98.36% Interpretabili
+
+===== [24] 3 occurrences =====
+
+rajanetal.[28]usedadap- reporting 98.47% accuracy for the CNN–LSTM component tive contrast enhancement, median filtering, fuzzy c-means and 98.82% accuracy for the ensemble strategy. Kukadiya clustering, gray-level co-occurrence matrix features, and an et al. [24] compared an ensemble model with five base Ensemble Deep Neural Support Vector Machine, reporting CNNsandboosting-basedclassifiers,achieving97%accuracy. an accuracy of 97.93%. Similarly, Ramachandran et al. [30] Nassar et al. [34] combined five CNN models using majority introduced a Mutual Informative MapReduce and Min
+
+esNet50withSHAP-based Reportedhighclassification Furtherrobustnessanalysisisneededtoreduce explainabilityforbraintumor accuracyof99.41%andprovided overfittinganddataset-dependencyconcerns. classification. feature-attribution-based interpretation. Kukadiyaetal.[24] Comparedanensemblemodelwith Demonstratedcomparative Computationallydemandingandlackssufficient fivebaseCNNsandboosting-based evaluationacrossmultipledeep validationinrealclinicalsettings. classifiers. andboostingmodels,achieving 97%accuracy. Vureetal.[25] UsedResNet18withGAN-based GAN-basedaugmentation Requirescareful
+
+ated Figshare,SARTAJ, 98.00% Attention-guidedcontextualfeaturerefinementwas andtransferlearning Br35H notexplicitlyincluded. Housseinetal.[23] ResNet50withSHAP Kaggle 99.41% Robustnessanddataset-dependencyrequirefurther explainability validation. Kukadiyaetal.[24] EnsembleoffiveCNNswith Figsharerepository 97.00% Ensembledesignincreasescomputational boostingmodels complexityanddeploymentcost. Vureetal.[25] ResNet18withGAN-based BraTS2021 98.36% Interpretabilityremainslimiteddespiteimproved augmentation datadiversity. Gomezetal.[26] CNNandtransferlearning Figshare,SARTAJ, 97.12% 
+
+===== [25] 3 occurrences =====
+
+tal.[24] Comparedanensemblemodelwith Demonstratedcomparative Computationallydemandingandlackssufficient fivebaseCNNsandboosting-based evaluationacrossmultipledeep validationinrealclinicalsettings. classifiers. andboostingmodels,achieving 97%accuracy. Vureetal.[25] UsedResNet18withGAN-based GAN-basedaugmentation Requirescarefulhyperparametertuningandprovides augmentationtoimprovedata improvedtrainingdiversityand limitedinterpretabilityforclinicaldecisionsupport. diversityfortumorclassification. achieved98.36%validation accuracyonBraTS2021. Gomezetal.[26] ComparedCNNandtransfer P
+
+aset VGG16 model with federated learning and transfer learning was divided into training and testing subsets, and class using Figshare, SARTAJ, and Br35H datasets, reporting 98% distribution was analyzed. Second, exploratory analysis was accuracy. Vure et al. [25] used ResNet18 with GAN-based performedtoexaminevariationsinimagecontrast,brightness, augmentationontheBraTS2021datasetandachieved98.36% background intensity, anatomical orientation, and tumor ap- validation accuracy. Asiri et al. [32] proposed an image pearance.Third,astandardizedpreprocessingpipelinewasap- enhancemen
+
+esNet50withSHAP Kaggle 99.41% Robustnessanddataset-dependencyrequirefurther explainability validation. Kukadiyaetal.[24] EnsembleoffiveCNNswith Figsharerepository 97.00% Ensembledesignincreasescomputational boostingmodels complexityanddeploymentcost. Vureetal.[25] ResNet18withGAN-based BraTS2021 98.36% Interpretabilityremainslimiteddespiteimproved augmentation datadiversity. Gomezetal.[26] CNNandtransferlearning Figshare,SARTAJ, 97.12% Attention-basedcontextmodelingwasnotexplored. models Br35H Khanetal.[27] Transferlearningwith Kaggle 99.20% Datasetimbalanceandexternalvalidatio
+
+===== [26] 4 occurrences =====
+
+ual Transfer learning has been widely used to improve classifi- representation. Shivahare et al. [35] proposed MultiAttenNet, cationperformancewhenannotatedmedicalimagedatasetsare a semi-supervised framework that combines multi-scale CNN limited. Gomez et al. [26] compared several CNN and trans- feature extraction with Transformer-based attention and re- fer learning architectures, including ResNet50, InceptionV3, ported 98.4% accuracy on the BraTS 2023 dataset. Saravanan TABLEI SUMMARYOFSELECTEDRECENTSTUDIESONBRAINTUMORCLASSIFICATION Authors(Year) Methodology Strength KeyLimit
+
+basedaugmentation Requirescarefulhyperparametertuningandprovides augmentationtoimprovedata improvedtrainingdiversityand limitedinterpretabilityforclinicaldecisionsupport. diversityfortumorclassification. achieved98.36%validation accuracyonBraTS2021. Gomezetal.[26] ComparedCNNandtransfer Providedbroadcomparisonof Attention-based,recurrent,andcontext-aware learningmodelsincluding pretrainedCNNsandachieved architectureswerenotfullyexplored. ResNet50,InceptionV3,Xception, 97.12%accuracyusingFigshare, MobileNetV2,andEfficientNetB0. SARTAJ,andBr35H. Khanetal.[27] Appliedtransferlearn
+
+ifi- portant for medical image classification because a model with cation reliability, class-wise behavior, model stability, inter- high overall accuracy may still perform inconsistently for a pretability, and practical limitations. clinically important class [26], [57], [58]. A. Result Analysis F. Performance Reliability and Data Leakage Control 1) Training and Validation Performance: The training and Severalmeasureswereadoptedtoimproveevaluationrelia- validation curves were analyzed to examine the learning bilityandreducetheriskofdataleakage.Thepredefinedtest- behavior and co
+
+eoffiveCNNswith Figsharerepository 97.00% Ensembledesignincreasescomputational boostingmodels complexityanddeploymentcost. Vureetal.[25] ResNet18withGAN-based BraTS2021 98.36% Interpretabilityremainslimiteddespiteimproved augmentation datadiversity. Gomezetal.[26] CNNandtransferlearning Figshare,SARTAJ, 97.12% Attention-basedcontextmodelingwasnotexplored. models Br35H Khanetal.[27] Transferlearningwith Kaggle 99.20% Datasetimbalanceandexternalvalidationremain GoogleNet concerns. Anantharajanetal. ACEA,FCM,GLCM,and Kaggle 97.93% Performancedependsstronglyonpreprocessing, [28] ED
+
+===== [27] 3 occurrences =====
+
+eptionResNetV2, Xception, MobileNetV2, and Efficient- outlines future research directions. NetB0, using data from Figshare, SARTAJ, and Br35H. Their study reported that InceptionV3 achieved the best average II. LITERATUREREVIEW accuracy of 97.12%. Khan et al. [27] evaluated AlexNet, Existing research on automated brain tumor classification MobileNetV2, and GoogleNet, with GoogleNet achieving has evolved from conventional machine learning with hand- 99.2% accuracy on a Kaggle dataset. Khaliki et al. [31] crafted features to deep learning-based and explainable di- used transfer l
+
+adcomparisonof Attention-based,recurrent,andcontext-aware learningmodelsincluding pretrainedCNNsandachieved architectureswerenotfullyexplored. ResNet50,InceptionV3,Xception, 97.12%accuracyusingFigshare, MobileNetV2,andEfficientNetB0. SARTAJ,andBr35H. Khanetal.[27] Appliedtransferlearningusing GoogleNetachieved99.2% Datasetimbalance,MRIvariability,andlimited AlexNet,MobileNetV2,and accuracyontheKaggledataset. externalvalidationmayreducegeneralization. GoogleNetforbraintumor classification. Anantharajanetal. ACEA,medianfiltering,fuzzy Combinedenhancement, Stronglydependsonpreproc
+
+t. Vureetal.[25] ResNet18withGAN-based BraTS2021 98.36% Interpretabilityremainslimiteddespiteimproved augmentation datadiversity. Gomezetal.[26] CNNandtransferlearning Figshare,SARTAJ, 97.12% Attention-basedcontextmodelingwasnotexplored. models Br35H Khanetal.[27] Transferlearningwith Kaggle 99.20% Datasetimbalanceandexternalvalidationremain GoogleNet concerns. Anantharajanetal. ACEA,FCM,GLCM,and Kaggle 97.93% Performancedependsstronglyonpreprocessing, [28] EDN-SVM segmentation,andhandcraftedfeatures. Rasheedetal.[29] CNN-basedclassifier Kaggle 98.04% Focusedmainlyonaccuracy,wi
+
+===== [28] 3 occurrences =====
+
+picallyinvolveimagepreprocessing,segmentation, analysis.Islametal.[20]developedahybridframeworkusing handcrafted feature extraction, and classification using tradi- a 9-layer CNN, a 13-layer CNN, and a CNN–LSTM model, tionallearningalgorithms.Anantharajanetal.[28]usedadap- reporting 98.47% accuracy for the CNN–LSTM component tive contrast enhancement, median filtering, fuzzy c-means and 98.82% accuracy for the ensemble strategy. Kukadiya clustering, gray-level co-occurrence matrix features, and an et al. [24] compared an ensemble model with five base Ensemble Deep Neural Suppor
+
+lity,andlimited AlexNet,MobileNetV2,and accuracyontheKaggledataset. externalvalidationmayreducegeneralization. GoogleNetforbraintumor classification. Anantharajanetal. ACEA,medianfiltering,fuzzy Combinedenhancement, Stronglydependsonpreprocessing,segmentation [28] c-meansclustering,gray-level segmentation,handcraftedfeatures, quality,andhandcraftedfeaturedesign. co-occurrencematrix(GLCM) andclassification,achieving features,andtheEDN-SVM 97.93%accuracy. classifierwereemployed. Rasheedetal.[29] DevelopedaCNN-basedclassifier Achieved98.04%accuracyand Focusedmainlyonclassification
+
+tion-basedcontextmodelingwasnotexplored. models Br35H Khanetal.[27] Transferlearningwith Kaggle 99.20% Datasetimbalanceandexternalvalidationremain GoogleNet concerns. Anantharajanetal. ACEA,FCM,GLCM,and Kaggle 97.93% Performancedependsstronglyonpreprocessing, [28] EDN-SVM segmentation,andhandcraftedfeatures. Rasheedetal.[29] CNN-basedclassifier Kaggle 98.04% Focusedmainlyonaccuracy,withlimited explainability. Ramachandranetal. MIMRwithMQ-SVM CBTRUS 90.00% LowerperformancecomparedwithmodernDL [30] approaches. Khalikietal.[31] TransferlearningCNNswith PublicMRIdataset ∼98.00% Ext
+
+===== [29] 3 occurrences =====
+
+oposed a multiscale CNN framework for LSTM-based studies provide limited explanation of how two- brain tumor classification and segmentation, reporting 97.3% dimensional spatial feature maps are converted into meaning- accuracyontheFigsharedataset.Rasheedetal.[29]developed ful sequential representations. In medical image classification, a CNN-based classifier for glioma, meningioma, and pituitary this step is important because the sequential representation tumor classification and obtained 98.04% accuracy. These should preserve spatial relationships rather than simply flatten s
+
+reprocessing,segmentation [28] c-meansclustering,gray-level segmentation,handcraftedfeatures, quality,andhandcraftedfeaturedesign. co-occurrencematrix(GLCM) andclassification,achieving features,andtheEDN-SVM 97.93%accuracy. classifierwereemployed. Rasheedetal.[29] DevelopedaCNN-basedclassifier Achieved98.04%accuracyand Focusedmainlyonclassificationaccuracy; forglioma,meningioma,and showedtheeffectivenessof explainabilityandclinicalinterpretabilitywere pituitarytumorclassification. CNN-basedfeaturelearning. limited. Ramachandranetal. ProposedMIMRpreprocessing Reducedredundantinf
+
+.[27] Transferlearningwith Kaggle 99.20% Datasetimbalanceandexternalvalidationremain GoogleNet concerns. Anantharajanetal. ACEA,FCM,GLCM,and Kaggle 97.93% Performancedependsstronglyonpreprocessing, [28] EDN-SVM segmentation,andhandcraftedfeatures. Rasheedetal.[29] CNN-basedclassifier Kaggle 98.04% Focusedmainlyonaccuracy,withlimited explainability. Ramachandranetal. MIMRwithMQ-SVM CBTRUS 90.00% LowerperformancecomparedwithmodernDL [30] approaches. Khalikietal.[31] TransferlearningCNNswith PublicMRIdataset ∼98.00% Externalclinicalvalidationandcomputational three-layerCNN efficie
+
+===== [30] 3 occurrences =====
+
+vel co-occurrence matrix features, and an et al. [24] compared an ensemble model with five base Ensemble Deep Neural Support Vector Machine, reporting CNNsandboosting-basedclassifiers,achieving97%accuracy. an accuracy of 97.93%. Similarly, Ramachandran et al. [30] Nassar et al. [34] combined five CNN models using majority introduced a Mutual Informative MapReduce and Minimum voting and reported 99.31% accuracy. Although ensemble Quadrangle SVM framework and reported 90% accuracy on methods can improve classification performance, they usually the CBTRUS dataset. Although such me
+
+ingioma,and showedtheeffectivenessof explainabilityandclinicalinterpretabilitywere pituitarytumorclassification. CNN-basedfeaturelearning. limited. Ramachandranetal. ProposedMIMRpreprocessing Reducedredundantinformation Lowerperformancethanmoderndeepmodelsand [30] withMQ-SVMclassificationfor beforeclassificationandachieved limitedcomparisonwithadvancedCNN braintumordetection. 90%accuracyonCBTRUS. architectures. Khalikietal.[31] UsedtransferlearningCNNswith Achievedapproximately98% Computationalcostandlimitedexternalclinical anadditionalthree-layerCNN accuracyusingpublicMRIdatas
+
+ronglyonpreprocessing, [28] EDN-SVM segmentation,andhandcraftedfeatures. Rasheedetal.[29] CNN-basedclassifier Kaggle 98.04% Focusedmainlyonaccuracy,withlimited explainability. Ramachandranetal. MIMRwithMQ-SVM CBTRUS 90.00% LowerperformancecomparedwithmodernDL [30] approaches. Khalikietal.[31] TransferlearningCNNswith PublicMRIdataset ∼98.00% Externalclinicalvalidationandcomputational three-layerCNN efficiencyremainconcerns. Proposedmodel Residual Figshare,SARTAJ, 99.47% Externalmulti-centervalidationandexpertclinical CNN–BiLSTM–Attention Br35H assessmentarestillrequired. withGr
+
+===== [31] 3 occurrences =====
+
+2%. Khan et al. [27] evaluated AlexNet, Existing research on automated brain tumor classification MobileNetV2, and GoogleNet, with GoogleNet achieving has evolved from conventional machine learning with hand- 99.2% accuracy on a Kaggle dataset. Khaliki et al. [31] crafted features to deep learning-based and explainable di- used transfer learning CNNs with an additional shallow CNN agnostic frameworks. The main research directions include classifier and reported approximately 98% accuracy. Yadav et handcrafted feature-based classification, CNN-based end-to- al. [33] applied tran
+
+roposedMIMRpreprocessing Reducedredundantinformation Lowerperformancethanmoderndeepmodelsand [30] withMQ-SVMclassificationfor beforeclassificationandachieved limitedcomparisonwithadvancedCNN braintumordetection. 90%accuracyonCBTRUS. architectures. Khalikietal.[31] UsedtransferlearningCNNswith Achievedapproximately98% Computationalcostandlimitedexternalclinical anadditionalthree-layerCNN accuracyusingpublicMRIdatasets validationremainimportantconcerns. classifier. includingBr35H. Asirietal.[32] Introducedadual-modulemethod Achieved98.9%accuracyand Computationallyintensiveandlack
+
+DN-SVM segmentation,andhandcraftedfeatures. Rasheedetal.[29] CNN-basedclassifier Kaggle 98.04% Focusedmainlyonaccuracy,withlimited explainability. Ramachandranetal. MIMRwithMQ-SVM CBTRUS 90.00% LowerperformancecomparedwithmodernDL [30] approaches. Khalikietal.[31] TransferlearningCNNswith PublicMRIdataset ∼98.00% Externalclinicalvalidationandcomputational three-layerCNN efficiencyremainconcerns. Proposedmodel Residual Figshare,SARTAJ, 99.47% Externalmulti-centervalidationandexpertclinical CNN–BiLSTM–Attention Br35H assessmentarestillrequired. withGrad-CAM++andLIME textual relat
+
+===== [32] 2 occurrences =====
+
+rchitectures. Khalikietal.[31] UsedtransferlearningCNNswith Achievedapproximately98% Computationalcostandlimitedexternalclinical anadditionalthree-layerCNN accuracyusingpublicMRIdatasets validationremainimportantconcerns. classifier. includingBr35H. Asirietal.[32] Introducedadual-modulemethod Achieved98.9%accuracyand Computationallyintensiveandlackssufficient usingimageenhancementand improvedimagequalitybefore explainabilityforclinicalinterpretation. classificationprocedures. classification. et al. [36] proposed a hybrid multi-transformer feature fusion increased architectural 
+
+as accuracy. Vure et al. [25] used ResNet18 with GAN-based performedtoexaminevariationsinimagecontrast,brightness, augmentationontheBraTS2021datasetandachieved98.36% background intensity, anatomical orientation, and tumor ap- validation accuracy. Asiri et al. [32] proposed an image pearance.Third,astandardizedpreprocessingpipelinewasap- enhancementandclassificationframeworkandreported98.9% pliedtoimproveimageconsistencyandreduceirrelevantback- accuracy. Ghasemi et al. [37] combined handcrafted and deep ground variation. Fourth, data augmentation was applied only features for CT
+
+===== [33] 1 occurrences =====
+
+d explainable di- used transfer learning CNNs with an additional shallow CNN agnostic frameworks. The main research directions include classifier and reported approximately 98% accuracy. Yadav et handcrafted feature-based classification, CNN-based end-to- al. [33] applied transfer learning with VGG-16 for multi-class end learning, transfer learning with pretrained networks, en- brain tumor classification and reported up to 98.5% accuracy. semble and hybrid deep learning models, and attention- or Thesestudiesshowthatpretrainednetworkscanprovideeffec- explainability-guided approa
+
+===== [34] 1 occurrences =====
+
+atrix features, and an et al. [24] compared an ensemble model with five base Ensemble Deep Neural Support Vector Machine, reporting CNNsandboosting-basedclassifiers,achieving97%accuracy. an accuracy of 97.93%. Similarly, Ramachandran et al. [30] Nassar et al. [34] combined five CNN models using majority introduced a Mutual Informative MapReduce and Minimum voting and reported 99.31% accuracy. Although ensemble Quadrangle SVM framework and reported 90% accuracy on methods can improve classification performance, they usually the CBTRUS dataset. Although such methods can provide r
+
+===== [35] 1 occurrences =====
+
+ies have also explored advanced hybrid and be irregular, fragmented, or heterogeneous across MRI slices. attention-based architectures for improving global contextual Transfer learning has been widely used to improve classifi- representation. Shivahare et al. [35] proposed MultiAttenNet, cationperformancewhenannotatedmedicalimagedatasetsare a semi-supervised framework that combines multi-scale CNN limited. Gomez et al. [26] compared several CNN and trans- feature extraction with Transformer-based attention and re- fer learning architectures, including ResNet50, InceptionV3, por
+
+===== [36] 1 occurrences =====
+
+r35H. Asirietal.[32] Introducedadual-modulemethod Achieved98.9%accuracyand Computationallyintensiveandlackssufficient usingimageenhancementand improvedimagequalitybefore explainabilityforclinicalinterpretation. classificationprocedures. classification. et al. [36] proposed a hybrid multi-transformer feature fusion increased architectural complexity. This further supports the strategywithGreyWolfOptimizer-basedhyperparametertun- needforcompactcontext-awaremodelsthatcancombinespa- ingandreported97.73%testaccuracyonaKagglebrainMRI tial feature extraction, contextual modeling, and 
+
+===== [37] 1 occurrences =====
+
+nd tumor ap- validation accuracy. Asiri et al. [32] proposed an image pearance.Third,astandardizedpreprocessingpipelinewasap- enhancementandclassificationframeworkandreported98.9% pliedtoimproveimageconsistencyandreduceirrelevantback- accuracy. Ghasemi et al. [37] combined handcrafted and deep ground variation. Fourth, data augmentation was applied only features for CT-based brain tumor detection and achieved tothetrainingsubsettoimproverobustnesswhilekeepingthe 94.82% accuracy. Other studies have explored transfer learn- validation and testing subsets unchanged. Fifth, the pro
+
+===== [38] 1 occurrences =====
+
+he proposed ing improvement, ML–DL comparisons, CNN-based feature residual CNN–BiLSTM–Attention model was trained to learn extraction with machine learning classifiers, and ensemble local spatial features, bidirectional contextual dependencies, CNN frameworks [38]–[41]. These studies indicate continued and attention-refined discriminative representations. Finally, progressinbraintumorclassification.However,recurringchal- Grad-CAM++andLIMEwereusedtoprovidecomplementary lengesremain,includingcomputationalcomplexity,datasetde- visual explanations of model predictions. pendence, li
+
+===== [39] 0 occurrences =====
+
+===== [40] 0 occurrences =====
+
+===== [41] 1 occurrences =====
+
+oposed ing improvement, ML–DL comparisons, CNN-based feature residual CNN–BiLSTM–Attention model was trained to learn extraction with machine learning classifiers, and ensemble local spatial features, bidirectional contextual dependencies, CNN frameworks [38]–[41]. These studies indicate continued and attention-refined discriminative representations. Finally, progressinbraintumorclassification.However,recurringchal- Grad-CAM++andLIMEwereusedtoprovidecomplementary lengesremain,includingcomputationalcomplexity,datasetde- visual explanations of model predictions. pendence, limited
+
+===== [42] 1 occurrences =====
+
+ddifferentanatomicalviews,such from Kaggle, containing 7,023 images across four diagnostic asaxial,coronal,andsagittalorientations.Tumorappearances categories:glioma,meningioma,pituitarytumor,andno-tumor alsovariedacrossclasses.Gliomacasesoftenshowedirregular [42]. The dataset was compiled from multiple public sources, andinfiltrativeregions,meningiomacasesfrequentlyappeared includingFigshare[43],theSARTAJbraintumordataset[44], near the brain boundary, and pituitary tumor cases were com- and Br35H [45]. The no-tumor images were obtained from monly located around the sellar regi
+
+===== [43] 1 occurrences =====
+
+rappearances categories:glioma,meningioma,pituitarytumor,andno-tumor alsovariedacrossclasses.Gliomacasesoftenshowedirregular [42]. The dataset was compiled from multiple public sources, andinfiltrativeregions,meningiomacasesfrequentlyappeared includingFigshare[43],theSARTAJbraintumordataset[44], near the brain boundary, and pituitary tumor cases were com- and Br35H [45]. The no-tumor images were obtained from monly located around the sellar region. In contrast, no-tumor Br35H, whereas the tumor-related classes were mainly col- imagescontainednormalanatomicalstructureswithoutvis
+
+===== [44] 1 occurrences =====
+
+meningioma,pituitarytumor,andno-tumor alsovariedacrossclasses.Gliomacasesoftenshowedirregular [42]. The dataset was compiled from multiple public sources, andinfiltrativeregions,meningiomacasesfrequentlyappeared includingFigshare[43],theSARTAJbraintumordataset[44], near the brain boundary, and pituitary tumor cases were com- and Br35H [45]. The no-tumor images were obtained from monly located around the sellar region. In contrast, no-tumor Br35H, whereas the tumor-related classes were mainly col- imagescontainednormalanatomicalstructureswithoutvisible lectedfromFigshareandSARTA
+
+===== [45] 1 occurrences =====
+
+nshowedirregular [42]. The dataset was compiled from multiple public sources, andinfiltrativeregions,meningiomacasesfrequentlyappeared includingFigshare[43],theSARTAJbraintumordataset[44], near the brain boundary, and pituitary tumor cases were com- and Br35H [45]. The no-tumor images were obtained from monly located around the sellar region. In contrast, no-tumor Br35H, whereas the tumor-related classes were mainly col- imagescontainednormalanatomicalstructureswithoutvisible lectedfromFigshareandSARTAJ.Duringtheoriginaldataset mass regions. Therefore, visual inspection was per
+
+===== [46] 1 occurrences =====
+
+ation ensures that all images are represented maydifferinspatialresolution,contrast,backgroundintensity, on a consistent intensity scale and prevents large pixel values noise level, and anatomical framing. These variations can from dominating gradient updates [46]. affect feature extraction and model generalization if the im- 3) Contrast Enhancement Using CLAHE: MRI scans may ages are used without standardization. Therefore, a structured exhibit low contrast between tumor tissue and surrounding preprocessing pipeline was applied before model training to anatomical structures. T
+
+===== [47] 1 occurrences =====
+
+ parameters were selected to enhance local 0 1 two intensity classes, and σ2(T) and σ2(T) denote their contrast while reducing the risk of noise amplification and 0 1 corresponding variances [49]. The resulting binary mask was artificial enhancement artifacts [47]. refined using morphological closing: 4) Adaptive Noise Handling: To avoid applying unneces- sary smoothing to all images, an adaptive noise-handling step I =(I⊕B)⊖B, (5) was performed using the variance of the Laplacian response: closed where ⊕ denotes dilation, ⊖ denotes erosion, and B rep- σ2 =Var(∇2I). (3) resents
+
+===== [48] 1 occurrences =====
+
+al information. This adaptive plied to the refined binary mask to identify the largest con- strategy reduced minor noise while minimizing the risk of nectedforegroundregion.LetC denotethedetectedcontours. i over-smoothing diagnostically relevant image details [48]. The contour with the maximum area was selected as: 5) Foreground Separation and Morphological Refinement: Aftercontrastenhancementandadaptivefiltering,Otsuthresh- C =argmaxArea(C ). (6) max i olding was applied to separate the main brain region from the i background. Otsu’s method estimates an optimal threshold T A b
+
+===== [49] 1 occurrences =====
+
+where w (T) and w (T) denote the probabilities of the to 8 × 8. These parameters were selected to enhance local 0 1 two intensity classes, and σ2(T) and σ2(T) denote their contrast while reducing the risk of noise amplification and 0 1 corresponding variances [49]. The resulting binary mask was artificial enhancement artifacts [47]. refined using morphological closing: 4) Adaptive Noise Handling: To avoid applying unneces- sary smoothing to all images, an adaptive noise-handling step I =(I⊕B)⊖B, (5) was performed using the variance of the Laplacian response: closed where ⊕ deno
+
+===== [50] 1 occurrences =====
+
+al features. exp(z ) h t L ∈ et R t 2 h 5 e 6. B T i h L e S a T tt M ent o io u n tp e u n t er b g e y H scor = e f h or 1 , e h a 2 c , h . t . i . m , e h 8 s , te w p h w e a re s yˆ i = (cid:80)4 j=1 exp i (z j ) , (22) computed using additive attention [50]: whereyˆ denotesthepredictedprobabilityofclassi,andz i i denotes the corresponding logit. The final predicted class was e =vT tanh(W h +b ), (19) t a t a selected as the class with the highest probability. where W denotes the attention weight matrix, b denotes 6) Model Complexity: To describe the computational scale a
+
+===== [51] 1 occurrences =====
+
+remapfromthefinalconvolutionallayer,andletYc denote evaluate the effectiveness of the proposed CNN–BiLSTM– thepredictionscoreforclassc.Grad-CAM++computespixel- Attention framework, four established pretrained CNN archi- level weighting coefficients as follows [51]: tectures were implemented as comparative baselines: VGG16, ResNet50, DenseNet121, and EfficientNet-B3. These models (cid:16) (cid:17)2 ∂Yc were selected because they represent different architectural ∂Ak αkc = ij . (23) design principles widely used in medical image classification, ij (cid:16) (cid:17)2 (cid:16) (cid
+
+===== [52] 1 occurrences =====
+
+deep learning model and g(z) wereevaluatedusingthesamedatasetpartitions,preprocessing denote the interpretable local surrogate model. LIME obtains strategy, training-only augmentation protocol, optimization an explanation by minimizing the following objective [52]: settings, and performance metrics as the proposed model, except for architecture-specific input-size requirements. This ξ(x)=argminL(f,g,π )+Ω(g), (26) protocol reduced evaluation bias and allowed the proposed x g∈G framework to be compared with established CNN-based mod- where L(f,g,π ) measures how faithfully the s
+
+===== [53] 1 occurrences =====
+
+alarchitecturebasedonstacked3×3 (cid:32) (cid:33) convolutional filters followed by pooling and fully connected wc = (cid:88) αkcReLU ∂Yc . (24) layers, making it a useful baseline for evaluating conventional k ij ∂Ak CNN-based hierarchical feature extraction [53]. ResNet50 i,j ij incorporates residual connections that improve gradient flow Finally, the class-discriminative Grad-CAM++ heatmap is andsupportthetrainingofdeepernetworks[54].DenseNet121 generated as: connects each layer to all preceding layers, promoting feature (cid:32) (cid:33) reuse and efficient gradient propaga
+
+===== [54] 1 occurrences =====
+
+line for evaluating conventional k ij ∂Ak CNN-based hierarchical feature extraction [53]. ResNet50 i,j ij incorporates residual connections that improve gradient flow Finally, the class-discriminative Grad-CAM++ heatmap is andsupportthetrainingofdeepernetworks[54].DenseNet121 generated as: connects each layer to all preceding layers, promoting feature (cid:32) (cid:33) reuse and efficient gradient propagation [55]. EfficientNet-B3 (cid:88) Lc =ReLU wcAk . (25) applies compound scaling to balance network depth, width, GC++ k k and input resolution, providing a trade-off between 
+
+===== [55] 1 occurrences =====
+
+gradient flow Finally, the class-discriminative Grad-CAM++ heatmap is andsupportthetrainingofdeepernetworks[54].DenseNet121 generated as: connects each layer to all preceding layers, promoting feature (cid:32) (cid:33) reuse and efficient gradient propagation [55]. EfficientNet-B3 (cid:88) Lc =ReLU wcAk . (25) applies compound scaling to balance network depth, width, GC++ k k and input resolution, providing a trade-off between predictive The resulting heatmap highlights spatial regions that pos- performance and computational efficiency [56]. itively influenced the predicted cla
+
+===== [56] 1 occurrences =====
+
+(cid:88) Lc =ReLU wcAk . (25) applies compound scaling to balance network depth, width, GC++ k k and input resolution, providing a trade-off between predictive The resulting heatmap highlights spatial regions that pos- performance and computational efficiency [56]. itively influenced the predicted class. In this study, Grad- Because these models were originally pretrained on Im- CAM++ was used to examine whether the proposed model ageNet, the MRI images were adapted to match their ex- focused on tumor-relevant anatomical regions during classifi- pected input configurations. The
+
+===== [57] 1 occurrences =====
+
+ortant for medical image classification because a model with cation reliability, class-wise behavior, model stability, inter- high overall accuracy may still perform inconsistently for a pretability, and practical limitations. clinically important class [26], [57], [58]. A. Result Analysis F. Performance Reliability and Data Leakage Control 1) Training and Validation Performance: The training and Severalmeasureswereadoptedtoimproveevaluationrelia- validation curves were analyzed to examine the learning bilityandreducetheriskofdataleakage.Thepredefinedtest- behavior and converge
+
+===== [58] 1 occurrences =====
+
+ for medical image classification because a model with cation reliability, class-wise behavior, model stability, inter- high overall accuracy may still perform inconsistently for a pretability, and practical limitations. clinically important class [26], [57], [58]. A. Result Analysis F. Performance Reliability and Data Leakage Control 1) Training and Validation Performance: The training and Severalmeasureswereadoptedtoimproveevaluationrelia- validation curves were analyzed to examine the learning bilityandreducetheriskofdataleakage.Thepredefinedtest- behavior and convergence st
+
+===== [59] 1 occurrences =====
+
+ass. manufacturer,acquisitionprotocol,magneticfieldstrength,pa- tient demographics, and institutional imaging practice. There- fore, external validation on independent multi-center datasets is necessary to assess the generalizability of the proposed framework [59], [60]. Second,theproposedframeworkperformsimage-levelclas- sification rather than pixel-level tumor segmentation. Grad- CAM++ and LIME were used to provide qualitative inter- pretabilityevidence,butthesemethodsdonotproduceexpert- validatedtumorboundaries.Therefore,thehighlightedregions should be interpreted as model-i
+
+===== [60] 1 occurrences =====
+
+anufacturer,acquisitionprotocol,magneticfieldstrength,pa- tient demographics, and institutional imaging practice. There- fore, external validation on independent multi-center datasets is necessary to assess the generalizability of the proposed framework [59], [60]. Second,theproposedframeworkperformsimage-levelclas- sification rather than pixel-level tumor segmentation. Grad- CAM++ and LIME were used to provide qualitative inter- pretabilityevidence,butthesemethodsdonotproduceexpert- validatedtumorboundaries.Therefore,thehighlightedregions should be interpreted as model-influen
+
+===== [61] 1 occurrences =====
+
+es from the four classes. The highlighted superpixel regions indicate local image areas that masks to evaluate whether the model explanations align with contributed to the predicted class, while the corresponding original MRI clinically verified tumor regions [61]. samplesprovidevisualreference. Third, the dataset was provided with predefined training andtestingpartitions,butpatient-levelidentifiersandcomplete erogeneous clinical datasets. Expert review of difficult cases source-level metadata were not available. Therefore, although may also help determine whether the remaining
+
+===== [62] 1 occurrences =====
+
+MRIdatamayimprovespatial-contextmodelinganddiagnos- tic robustness. Future studies may also investigate integration Conflict of Interest The authors declare that they have no withotherclinicallyrelevantimagingmodalitieswhereappro- conflict of interest. priate [62]. Fifth, although the hybrid architecture improves representa- Ethical Approval This study used publicly available tion learning by combining residual CNN features, BiLSTM- anonymized brain MRI images. No new human participant based contextual modeling, and attention-based feature re- data were collected; therefore, et

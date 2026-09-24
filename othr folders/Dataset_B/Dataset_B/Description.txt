@@ -1,0 +1,125 @@
+Dataset Name:
+Brain Tumor MRI Dataset (Glioma, Meningioma, Pituitary, No Tumor)
+
+Dataset Repository:
+Mendeley Data
+
+Dataset Link:
+https://data.mendeley.com/datasets/zwr4ntf94j/4
+
+DOI:
+10.17632/zwr4ntf94j.4
+
+Version:
+Version 4
+
+Published:
+23 September 2025
+
+Data Type:
+Brain MRI Images
+
+MRI Modality:
+T1-weighted contrast-enhanced MRI
+
+Total Number of Images:
+12,064
+
+Number of Classes:
+4
+
+Classes:
+1. Glioma Tumor
+2. Meningioma Tumor
+3. Pituitary Tumor
+4. No Tumor (Normal)
+
+DATASET SPLIT
+
+Training Data:
+80% of the dataset
+Total Training Images: 9,650
+
+Class Distribution:
+- Glioma: 3,018
+- Meningioma: 2,183
+- Pituitary: 2,504
+- No Tumor: 1,945
+
+Testing Data:
+20% of the dataset
+Total Testing Images: 2,414
+
+Class Distribution:
+- Glioma: 755
+- Meningioma: 626
+- Pituitary: 546
+- No Tumor: 487
+
+OVERALL CLASS DISTRIBUTION
+
+- Glioma: 3,773
+- Meningioma: 2,809
+- Pituitary: 3,050
+- No Tumor: 2,432
+- Total: 12,064
+
+IMAGE INFORMATION
+
+Image Format:
+JPEG/PNG
+
+Image Type:
+Preprocessed MRI images
+
+Image Color:
+Grayscale or RGB depending on the scan
+
+Folder Organization:
+The images are organized into class-specific folders under separate
+training and testing directories.
+
+Folder Structure:
+
+Brain_Tumor_MRI_Dataset/
+├── train/
+│   ├── Glioma/
+│   ├── Meningioma/
+│   ├── Pituitary/
+│   └── No_Tumor/
+└── test/
+    ├── Glioma/
+    ├── Meningioma/
+    ├── Pituitary/
+    └── No_Tumor/
+
+LICENSE
+
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+DATASET CONTRIBUTORS
+
+MD IRFANUL KABIR HIRA
+MD SOHAG HOSSAIN
+MST MORIOM AKTER BITHEE
+Umme Sara Sara
+MD MAHMUDUL HASAN
+Abdullah Al Towsif
+Md Kowsar Ahmed
+
+INSTITUTIONS
+
+- National Institute of Textile Engineering and Research
+- Dhaka University of Engineering and Technology
+
+AVAILABLE METADATA
+
+The repository provides dataset-level information including MRI
+modality, class labels, image counts, training/testing split,
+image format, and dataset organization.
+
+Detailed patient-level clinical information such as patient age,
+sex, patient ID, scanner manufacturer, magnetic field strength,
+and complete acquisition parameters is not reported on the
+dataset repository page. Therefore, such information should not
+be assumed or artificially generated.

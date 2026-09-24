@@ -1,0 +1,17 @@
+{
+  "data_dir": "C:\\user\\juli\\thesis\\original_file\\othr folders\\clean_deduplicated_datasets\\preprocessed_train_A",
+  "output_dir": "C:\\user\\juli\\thesis\\original_file\\othr folders\\clean_five_fold_results",
+  "models": [
+    "proposed"
+  ],
+  "epochs": 40,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "patience": 5,
+  "num_workers": 0,
+  "image_size": 256,
+  "seed": 42,
+  "pretrained": true,
+  "amp": true
+}
