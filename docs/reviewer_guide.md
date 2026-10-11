@@ -2,6 +2,8 @@
 
 This repository accompanies research on four-class brain MRI classification with a residual CNN, BiLSTM and additive attention. It contains source code and saved experiment outputs. It is not a claim of independently reproduced clinical performance.
 
+For completed checks and unresolved limitations, see the [repository audit](audit_report.md).
+
 ## Suggested reading order
 
 1. Inspect the proposed architecture in [src/models/proposed.py](../src/models/proposed.py).
