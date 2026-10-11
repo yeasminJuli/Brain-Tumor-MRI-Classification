@@ -4,7 +4,7 @@ A research companion for four-class brain MRI classification using a residual CN
 
 ## Start here
 
-- **Review the research:** [Reviewer guide](docs/REVIEWER_GUIDE.md)
+- **Explore the project:** [Project guide](docs/PROJECT_GUIDE.md)
 - **Understand the experiment:** [Methods and limitations](docs/METHODS.md)
 - **Inspect evidence:** [Results](results/README.md) · [Figures](figures/README.md)
 
@@ -12,12 +12,14 @@ A research companion for four-class brain MRI classification using a residual CN
 
 ```text
 src/          Reusable model, preprocessing and augmentation
-scripts/      Data-preparation command and task-grouped reference scripts
+scripts/      Clearly named workflows grouped by task and dataset
 configs/      Example paths and class mappings
 results/      Selected single-run and cross-dataset tables
 figures/      Corresponding confusion matrices and ROC curves
-docs/         Reviewer guide and methods
+docs/         Project guide, methods and verification notes
 ```
+
+See the [script index](scripts/README.md) for preprocessing, training, evaluation and explanation workflows. The reusable [model definition](src/models/proposed.py) is kept separately from experiment scripts.
 
 ## Run data preparation
 
@@ -34,6 +36,5 @@ These commands preserve class-folder names. For independent validation, split or
 
 ## What is shared
 
-This public view contains selected evidence and reference code. Full datasets, checkpoints, fold-level outputs, drafts and intermediate files are retained in the **Brain Tumor Research Archive** locally. Reference training/evaluation scripts may need machine-path and import updates; checkpoints are not bundled. No clinical metadata or exact historical environment has been invented.
+This public view contains selected evidence and reference code. Full datasets, checkpoints, fold-level outputs, drafts and intermediate files are retained in the **Brain Tumor Research Archive** locally. Historical training/evaluation scripts require checking their data and checkpoint paths; checkpoints are not bundled. No clinical metadata or exact historical environment has been invented.
 
-The earlier detailed public layout remains in Git history. A local folder is not a GitHub private repository. This cleanup does not erase previously published data.
