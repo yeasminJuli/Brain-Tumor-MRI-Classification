@@ -1,41 +1,50 @@
 # Brain Tumor MRI Classification
 
-A research companion for four-class brain MRI classification using a residual CNN, BiLSTM and additive attention.
+This project classifies brain MRI images into four classes: glioma, meningioma, no tumor and pituitary tumor. The model combines a residual CNN for feature extraction, a bidirectional LSTM for sequence processing and an attention layer that combines the sequence outputs before classification.
 
-The original Dataset A evaluation achieved **99.47% accuracy**. This repository presents that experiment and the column-wise and zigzag reshaping variants. See the [result sources and interpretation](results/README.md).
+The original model achieved **99.47% accuracy on 1,311 Dataset A test images**. This repository focuses on that experiment and the column-wise and zigzag reshaping variants.
 
-## Start here
+## Results
 
-- **Explore the project:** [Project guide](docs/PROJECT_GUIDE.md)
-- **Understand the experiment:** [Methods and limitations](docs/METHODS.md)
-- **Inspect evidence:** [Results](results/README.md) · [Figures](figures/README.md)
+| Experiment | Test accuracy |
+|---|---:|
+| Original model | 99.47% |
+| Column-wise reshaping | 99.24% |
+| Zigzag reshaping | 99.31% |
 
-## Clear folder structure
+These are saved single-run results. The [results page](results/README.md) explains their sources and the limits of comparing them. Confusion matrices and ROC curves are in [figures](figures/README.md).
 
-```text
-src/          Reusable model, preprocessing and augmentation
-scripts/      Clearly named workflows grouped by task and dataset
-configs/      Example paths and class mappings
-results/      Dataset A results and reshaping ablation
-figures/      Corresponding confusion matrices and ROC curves
-docs/         Project guide, methods and verification notes
-```
+## Finding the code
 
-See the [script index](scripts/README.md) for preprocessing, training, evaluation and explanation workflows. The reusable [model definition](src/models/proposed.py) is kept separately from experiment scripts.
+| Folder | Contents |
+|---|---|
+| [src/models](src/models) | Proposed model architecture |
+| [scripts/preprocessing](scripts/preprocessing) | Image preprocessing |
+| [scripts/augmentation](scripts/augmentation) | Training-image augmentation |
+| [scripts/training](scripts/training) | Model training |
+| [scripts/evaluation](scripts/evaluation) | Model evaluation |
+| [scripts/explainability](scripts/explainability) | Attention weights, Grad-CAM++ and LIME |
+| [scripts/ablation](scripts/ablation) | Column-wise and zigzag reshaping experiments |
+| [results](results) | Saved metrics and classification reports |
+| [figures](figures) | Saved evaluation figures |
 
-## Run data preparation
+The [script index](scripts/README.md) lists the individual files. [Methods](docs/METHODS.md) describes preprocessing, sequence construction and how to interpret the results.
 
-Install a suitable PyTorch build and the dependencies in `requirements.txt` using Python 3.11.
+## Getting started
+
+Use Python 3.11 and install a PyTorch version suitable for your machine, followed by the remaining dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
-python scripts/prepare_data.py --help
-python scripts/prepare_data.py preprocess --input PATH_TO_RAW_CLASSES --output PATH_TO_NEW_PROCESSED_FOLDER
-python scripts/prepare_data.py augment --input PATH_TO_TRAINING_CLASSES --output PATH_TO_NEW_AUGMENTED_FOLDER --copies 4
 ```
 
-These commands preserve class-folder names. For independent validation, split originals before augmentation.
+To preprocess images or create augmented training images:
 
-## What is shared
+```bash
+python scripts/prepare_data.py preprocess --input PATH_TO_RAW_CLASSES --output PATH_TO_PROCESSED_IMAGES
+python scripts/prepare_data.py augment --input PATH_TO_TRAINING_CLASSES --output PATH_TO_AUGMENTED_IMAGES --copies 4
+```
 
-This public view contains selected evidence and reference code. Full datasets, checkpoints, fold-level outputs, drafts and intermediate files are retained in the **Brain Tumor Research Archive** locally. Historical training/evaluation scripts require checking their data and checkpoint paths; checkpoints are not bundled. No clinical metadata or exact historical environment has been invented.
+Arrange input images in class folders. These commands preserve the folder names. When preparing a new experiment, split the original images before augmentation so that related copies do not enter both training and validation.
+
+The dataset-specific scripts retain the original experiment settings. Check their input, output and checkpoint paths before running them. Datasets and trained weights are not included, so the repository alone is not enough to reproduce every result.

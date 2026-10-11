@@ -1,10 +1,9 @@
 # Project guide
 
-1. [Model definition](../src/models/proposed.py)
-2. [Preprocessing](../src/preprocessing/pipeline.py) and [augmentation](../src/augmentation/transforms.py)
-3. [Methods and limitations](METHODS.md)
-4. [Selected result tables](../results/README.md)
-5. [Confusion matrices and ROC curves](../figures/README.md)
-6. [Workflow scripts](../scripts/README.md)
+Start with the [README](../README.md) for the model, results and setup instructions.
 
-The author retains complete fold-level outputs, intermediate experiments, local data and weights separately. This public repository is a selected research companion. It is not a claim that all historical experiments are independently reproducible from the public files alone.
+- [Script index](../scripts/README.md): find a workflow by task.
+- [Methods](METHODS.md): understand preprocessing and sequence construction.
+- [Results](../results/README.md): read the saved Dataset A metrics and their sources.
+- [Figures](../figures/README.md): view the confusion matrices and ROC curves.
+- [Verification](VERIFICATION.md): see what was checked and what was not rerun.
