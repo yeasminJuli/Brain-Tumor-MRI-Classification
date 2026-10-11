@@ -3,25 +3,11 @@
     "train": "data/dataset_a/train",
     "test": "data/dataset_a/test"
   },
-  "dataset_b": {
-    "train": "data/dataset_b/train",
-    "test": "data/dataset_b/test"
-  },
-  "dataset_c": {
-    "train": "data/dataset_c/train",
-    "test": "data/dataset_c/test"
-  },
   "class_order": [
     "glioma",
     "meningioma",
     "notumor",
     "pituitary"
   ],
-  "dataset_c_aliases": {
-    "Glioma": "glioma",
-    "Meningioma": "meningioma",
-    "Healthy": "notumor",
-    "Pituitary Macroadenoma": "pituitary"
-  },
   "note": "Example paths only; historical scripts do not automatically consume this configuration."
 }

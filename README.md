@@ -2,6 +2,8 @@
 
 A research companion for four-class brain MRI classification using a residual CNN, BiLSTM and additive attention.
 
+The original Dataset A evaluation achieved **99.47% accuracy**. This repository presents that experiment and the column-wise and zigzag reshaping variants. See the [result sources and interpretation](results/README.md).
+
 ## Start here
 
 - **Explore the project:** [Project guide](docs/PROJECT_GUIDE.md)
@@ -14,7 +16,7 @@ A research companion for four-class brain MRI classification using a residual CN
 src/          Reusable model, preprocessing and augmentation
 scripts/      Clearly named workflows grouped by task and dataset
 configs/      Example paths and class mappings
-results/      Selected single-run and cross-dataset tables
+results/      Dataset A results and reshaping ablation
 figures/      Corresponding confusion matrices and ROC curves
 docs/         Project guide, methods and verification notes
 ```
@@ -32,7 +34,7 @@ python scripts/prepare_data.py preprocess --input PATH_TO_RAW_CLASSES --output P
 python scripts/prepare_data.py augment --input PATH_TO_TRAINING_CLASSES --output PATH_TO_NEW_AUGMENTED_FOLDER --copies 4
 ```
 
-These commands preserve class-folder names. For independent validation, split originals before augmentation. The historical C split-after-augmentation experiment is explicitly described in the methods.
+These commands preserve class-folder names. For independent validation, split originals before augmentation.
 
 ## What is shared
 

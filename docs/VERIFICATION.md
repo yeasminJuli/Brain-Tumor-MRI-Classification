@@ -1,7 +1,5 @@
 # Verification scope
 
-The previous complete package passed source-hash, syntax, document-link, figure-decoding and model-interface checks. Nine saved evaluation tables reconciled with their confusion matrices; the three C-related AUCs reconciled with original local prediction files. That full audit is retained locally.
+The original Dataset A accuracy was checked against its saved metrics file. Column-wise and zigzag accuracies were recomputed from their saved confusion matrices, each containing 1,311 test predictions. Published result files and figures were copied without altering their values.
 
-This simplified public view preserves selected table/figure bytes. Scientific limitations are in METHODS.md. Syntax or file integrity checks do not establish clinical validity, patient independence or exact end-to-end reproduction.
-
-After the workflow reorganization, Python syntax, relative documentation links, the data-preparation help command and model instantiation were checked. Historical training and evaluation workflows were not rerun.
+Python syntax and relative documentation links were checked after reorganization. This update does not rerun training, establish clinical validity or certify an end-to-end reproduction. The original-model discrepancy in the older combined ablation table remains unresolved; that table is not used in this public summary.

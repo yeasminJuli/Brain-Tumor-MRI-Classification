@@ -1,5 +1,5 @@
-# Selected evaluation figures
+# Dataset A figures
 
-Each folder corresponds to the same condition in `results/`. Confusion-matrix entries are image counts, not percentages; C tests contain 228 images and original A testing contains 1,311. Rows represent true classes and columns predicted classes in the C evaluation workflow.
+[Original confusion matrix](dataset_a/confusion_matrix.png) and [ROC curves](dataset_a/roc_curves.png) accompany the original Dataset A result.
 
-Detailed fold-level figures remain in the complete local archive. No plots were redrawn to change counts or scores.
+The [column-wise confusion matrix](reshaping_ablation/column_wise/confusion_matrix.png) and [zigzag confusion matrix](reshaping_ablation/zigzag/confusion_matrix.png) show the separately saved reshaping experiments. Their entries are image counts. See [results](../results/README.md) for the source and comparison limits. Saved figures have not been altered.
