@@ -1,0 +1,2 @@
+fold,accuracy,micro_accuracy,macro_class_accuracy,macro_precision,micro_precision,macro_recall,micro_recall,macro_f1,micro_f1,macro_auc,micro_auc,loss,best_epoch,best_val_accuracy,validation_samples
+5,0.9987745098039216,0.9987745098039216,0.99875071922907,0.9986845934987783,0.9987745098039216,0.99875071922907,0.9987745098039216,0.9987171929380494,0.9987745098039216,,,,2,0.9987745098039216,5712

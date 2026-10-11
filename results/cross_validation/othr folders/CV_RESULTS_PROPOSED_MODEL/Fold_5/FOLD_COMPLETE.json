@@ -1,0 +1,11 @@
+{
+    "fold": 5,
+    "status": "complete",
+    "best_epoch": 27,
+    "best_val_accuracy": 0.993172268907563,
+    "epochs_completed": 37,
+    "early_stopped": true,
+    "metrics_file": "CV_RESULTS_PROPOSED_MODEL/Fold_5/fold_metrics.csv",
+    "best_model_file": "CV_RESULTS_PROPOSED_MODEL/Fold_5/BEST_MODEL.pth",
+    "latest_checkpoint_file": "CV_RESULTS_PROPOSED_MODEL/Fold_5/checkpoints/LATEST_CHECKPOINT.pth"
+}

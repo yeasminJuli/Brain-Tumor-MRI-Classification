@@ -1,0 +1,32 @@
+{
+    "fold": 1,
+    "seed": 43,
+    "train_samples": 22848,
+    "validation_samples": 5712,
+    "best_epoch": 15,
+    "best_validation_accuracy": 0.9910714285714286,
+    "epochs_completed": 25,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "num_epochs": 80,
+    "num_workers": 0,
+    "early_stopping": true,
+    "early_stopping_patience": 10,
+    "early_stopping_monitor": "val_accuracy",
+    "min_delta": 0.0,
+    "resumed": false,
+    "architecture": "CNN Residual Blocks -> BiLSTM -> Additive Attention -> FC",
+    "input_size": [
+        256,
+        256
+    ],
+    "classes": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+    ],
+    "total_parameters": 3817413,
+    "trainable_parameters": 3817413,
+    "non_trainable_parameters": 0
+}

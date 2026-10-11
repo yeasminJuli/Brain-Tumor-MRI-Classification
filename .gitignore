@@ -1,51 +1,26 @@
-# ==============================
-# Python environment
-# ==============================
-venv/
+# Local data, environments and generated runs
+data/**
+!data/README.md
+checkpoints/**
+!checkpoints/README.md
+outputs/
+archive/
 .venv/
-env/
+venv/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# ==============================
-# Large model checkpoints
-# ==============================
+*.py[cod]
+.ipynb_checkpoints/
 *.pth
 *.pt
 *.ckpt
-
-# ==============================
-# Datasets / archives
-# ==============================
+*.onnx
 *.zip
 *.rar
 *.7z
-*.tar
-*.gz
-
-# ==============================
-# MRI dataset image files
-# ==============================
-*.jpg
-*.jpeg
-*.png
-*.bmp
-*.tif
-*.tiff
-
-# ==============================
-# Jupyter / IDE
-# ==============================
-.ipynb_checkpoints/
-.vscode/
-.idea/
-
-# ==============================
-# OS / temporary files
-# ==============================
-.DS_Store
-Thumbs.db
-*.tmp
+.env
+.env.*
+configs/*.local.json
 *.log
+Thumbs.db
+.DS_Store
+# Selected figures are intentionally NOT ignored.

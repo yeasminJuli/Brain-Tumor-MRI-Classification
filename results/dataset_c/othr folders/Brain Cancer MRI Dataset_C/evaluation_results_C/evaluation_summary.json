@@ -1,0 +1,35 @@
+{
+  "checkpoint": "C:\\user\\juli\\thesis\\Brain Cancer MRI Dataset_C\\training_outputs_C\\hybrid_cnn_bilstm_attention_final.pth",
+  "checkpoint_sha256": "d43b26ac1a853de82dfd4cf2bbb1a165133edc4ecf50c6c7863c60bdba5bcce4",
+  "test_directory": "C:\\user\\juli\\thesis\\Brain Cancer MRI Dataset_C\\preprocessed_test_C",
+  "metrics": {
+    "test_loss": 0.6103218971310478,
+    "accuracy": 0.8771929824561403,
+    "macro_precision": 0.876311475409836,
+    "macro_recall": 0.8757207469619801,
+    "macro_f1": 0.8744026089088258,
+    "macro_auc_ovr": 0.9774241378480704,
+    "best_training_epoch": 34.0,
+    "best_validation_loss": 0.1289330511181656,
+    "best_validation_accuracy": 0.966996699669967
+  },
+  "class_order": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "folder_aliases": {
+    "Glioma": "glioma",
+    "Meningioma": "meningioma",
+    "Healthy": "notumor",
+    "Pituitary Macroadenoma": "pituitary",
+    "glioma": "glioma",
+    "meningioma": "meningioma",
+    "notumor": "notumor",
+    "pituitary": "pituitary"
+  },
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128",
+  "notes": "C checkpoint selected on file-level validation after augmentation; augmented relatives overlap between training and validation. A/C cross-dataset image and patient overlap has not been audited. Cross-dataset results do not establish independent patient-level validation."
+}

@@ -1,134 +1,56 @@
-\# Brain Tumor MRI Classification
+# Brain Tumor MRI Classification
 
+Research code for four-class MRI classification with a residual CNN, BiLSTM and additive attention, alongside baseline, ablation, cross-validation and cross-dataset experiments.
 
+## Start here
 
-This repository contains the source code, experimental workflows, and selected results for a brain MRI tumor classification research project.
+- [Script index](docs/script_index.md): find preprocessing, training, evaluation and explainability scripts.
+- [Experiment notes](docs/experiment_notes.md): class mappings, missing metadata and differences between protocols.
+- `results/`: saved numerical evidence. `figures/`: saved visual results.
 
+## Project structure
 
+```text
+scripts/       Task-grouped historical scripts and a portable data-preparation CLI
+src/           Reusable proposed model, preprocessing and augmentation functions
+configs/       Example dataset paths and explicit class mappings
+results/       Numerical results separated by experiment
+figures/       Existing plots and selected explanation figures
+docs/          Script index and experiment notes
+data/          Full datasets locally; instructions only in GitHub
+checkpoints/   Full weights locally; instructions only in GitHub
+```
 
-\## Proposed Model
+## Quick start
 
+Use Python 3.11 and a suitable PyTorch installation. Dependency versions are not a reconstructed historical environment.
 
+```powershell
+python -m pip install -r requirements.txt
+python scripts/prepare_data.py --help
+python scripts/prepare_data.py preprocess --input "PATH_TO_RAW_CLASS_FOLDERS" --output "PATH_TO_NEW_PROCESSED_FOLDER"
+python scripts/prepare_data.py augment --input "PATH_TO_TRAINING_CLASS_FOLDERS" --output "PATH_TO_NEW_AUGMENTED_FOLDER" --copies 4
+```
 
-The proposed framework combines:
+The commands preserve class folder names and write lossless PNGs. Do not preprocess already processed images again. Partition originals before augmentation when independent validation is required.
 
+## Training and evaluation
 
+The historical scripts are organized by task under `scripts/historical/`; filenames and source contents are preserved. They are research records, not a fully migrated command-line application. Review their path settings and imports before running them. The reusable model is in `src/models/proposed.py`. No training was rerun to create this package.
 
-\- Convolutional Neural Network (CNN)
+The original four-class output order is glioma, meningioma, no tumor, pituitary. Dataset C folder names require the explicit mapping in `configs/dataset_paths.example.json`. Do not assume alphabetical folder order matches checkpoint outputs.
 
-\- Bidirectional Long Short-Term Memory (BiLSTM)
+## Data and results
 
-\- Attention mechanism
+This organization task does not invent clinical metadata or claim source/patient independence. Original and cleaned experiments remain separate. See the notes before using a result in the manuscript. Historical scores are retained even where the protocol has limitations.
 
+No license is assigned to the author's code by this packaging task. Dataset licenses and figure permissions remain those of their respective sources.
 
+## GitHub contents
 
-The model performs four-class brain MRI classification:
+This is the compact package. Full datasets, weights, environments and per-image logs are excluded. Selected PNG figures are included. `docs/source_index.csv` records the source of copied artifacts.
 
+## Existing repository files
 
-
-1\. Glioma
-
-2\. Meningioma
-
-3\. No Tumor
-
-4\. Pituitary Tumor
-
-
-
-\## Main Experiments
-
-
-
-The repository contains code and experimental results for:
-
-
-
-\- Proposed Hybrid CNN-BiLSTM-Attention model
-
-\- VGG16
-
-\- ResNet50
-
-\- EfficientNet-B3
-
-\- DenseNet121
-
-\- Five-fold cross-validation
-
-\- Sequence-ordering ablation experiments
-
-\- Cross-dataset validation
-
-\- Statistical significance testing
-
-\- LIME explainability
-
-\- Grad-CAM++ explainability
-
-\- Dataset overlap and duplicate analysis
-
-
-
-\## Dataset A
-
-
-
-Dataset A is a publicly available brain MRI dataset containing 7,023 images from four classes.
-
-
-
-Source:
-
-
-
-https://data.mendeley.com/datasets/w4sw3s9f59/1
-
-
-
-The dataset combines images originating from Figshare, SARTAJ, and Br35H.
-
-
-
-\## Dataset B
-
-
-
-Dataset B was used for additional external and cross-dataset validation.
-
-
-
-Source:
-
-
-
-https://data.mendeley.com/datasets/zwr4ntf94j/4
-
-
-
-\## Repository Contents
-
-
-
-`all\_codes/` contains the main preprocessing, training, evaluation, cross-validation, explainability, ablation, and statistical-analysis scripts.
-
-
-
-Experimental result directories contain CSV, JSON, and text outputs used for analysis and manuscript preparation.
-
-
-
-\## Important Note
-
-
-
-The MRI image datasets and large trained model checkpoint files are not included in this repository because of their size. Dataset links are provided above so that the datasets can be obtained from their original public sources.
-
-
-
-\## Research Use
-
-
-
-This repository is intended for academic and research purposes.
+The original all_codes, othr folders and ref directories are retained for continuity. Start with scripts, src, results, figures and docs for the organized version. No original research files were deleted during this update.
 

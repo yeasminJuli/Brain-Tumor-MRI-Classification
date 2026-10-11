@@ -1,0 +1,2 @@
+best_epoch,best_validation_loss,test_loss,test_accuracy,test_macro_precision,test_macro_recall,test_macro_f1,test_macro_auc_ovr
+6,0.11461397444222574,0.10222897611579973,0.9711902956785443,0.9706796816923029,0.9704791633023437,0.9705260609886323,0.9981209389598619

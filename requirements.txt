@@ -1,0 +1,15 @@
+# Install a PyTorch build appropriate for your CPU/GPU first.
+# Historical package versions were not fully recorded; these are dependency names, not a lockfile.
+torch
+torchvision
+numpy
+pandas
+scipy
+scikit-learn
+scikit-image
+opencv-python
+Pillow
+matplotlib
+seaborn
+tqdm
+lime

@@ -1,0 +1,78 @@
+Dataset Name:
+Brain Tumor MRI Dataset
+
+Data Type:
+Brain MRI Images
+
+Dataset Source:
+Publicly available Brain Tumor MRI Dataset compiled from multiple public sources, including Figshare, SARTAJ, and Br35H.
+
+Main Dataset Link:
+https://data.mendeley.com/datasets/w4sw3s9f59/1
+
+Original Data Sources:
+1. Figshare Brain Tumor Dataset
+   https://figshare.com/articles/dataset/brain_tumor_dataset/1512427
+
+2. SARTAJ Brain Tumor Classification MRI Dataset
+   https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri
+
+3. Br35H Brain Tumor Dataset
+   https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection
+
+
+DATASET INFORMATION
+
+Total Number of Original Images: 7,023
+Number of Classes: 4
+
+Classes:
+1. Glioma
+2. Meningioma
+3. No Tumor
+4. Pituitary Tumor
+
+The dataset contains predefined training and testing subsets.
+
+Training Set:
+Total Images: 5,712
+
+Class Distribution:
+- Glioma: 1,321
+- Meningioma: 1,339
+- No Tumor: 1,595
+- Pituitary Tumor: 1,457
+
+Testing Set:
+Total Images: 1,311
+
+Class Distribution:
+- Glioma: 300
+- Meningioma: 306
+- No Tumor: 405
+- Pituitary Tumor: 300
+
+Overall Class Distribution:
+- Glioma: 1,621
+- Meningioma: 1,645
+- No Tumor: 2,000
+- Pituitary Tumor: 1,757
+- Total: 7,023
+
+
+AVAILABLE METADATA
+
+The publicly available dataset primarily provides MRI images and their corresponding diagnostic class labels.
+
+Consistent patient-level and clinical metadata were not available across all source datasets. Therefore, the following information is not consistently available:
+
+- Patient ID
+- Patient age
+- Patient sex
+- Clinical history
+- Hospital/institution information
+- MRI scanner manufacturer
+- Magnetic field strength
+- MRI acquisition parameters/protocols
+
+No unavailable patient-level or clinical metadata were generated or assumed.

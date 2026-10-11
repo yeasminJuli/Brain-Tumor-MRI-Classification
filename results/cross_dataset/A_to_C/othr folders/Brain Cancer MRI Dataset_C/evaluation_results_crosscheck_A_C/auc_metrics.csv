@@ -1,0 +1,5 @@
+class,auc
+glioma,0.9801424129976932
+meningioma,0.981623754152824
+notumor,0.9775862068965517
+pituitary,1.0
