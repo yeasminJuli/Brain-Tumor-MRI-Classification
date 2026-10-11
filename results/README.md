@@ -10,4 +10,4 @@ The original score comes from [saved overall metrics](dataset_a/overall_metrics.
 
 These are separately saved single-run results, not cross-validation averages or a newly rerun matched comparison. The older combined comparison table contains an inconsistent original-model result and is not used here. The variant reports retain the original saved values. Equal sample counts alone do not verify identical image ordering, checkpoint selection or training conditions across runs.
 
-ìRow-wiseî is the historical name for the original model. Its actual implementation uses a direct tensor reshape, as explained in [Methods](../docs/METHODS.md).
+‚ÄúRow-wise‚Äù is the historical name for the original model. Its actual implementation uses a direct tensor reshape, as explained in [Methods](../docs/METHODS.md).
