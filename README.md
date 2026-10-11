@@ -37,4 +37,3 @@ These commands preserve class-folder names. For independent validation, split or
 ## What is shared
 
 This public view contains selected evidence and reference code. Full datasets, checkpoints, fold-level outputs, drafts and intermediate files are retained in the **Brain Tumor Research Archive** locally. Historical training/evaluation scripts require checking their data and checkpoint paths; checkpoints are not bundled. No clinical metadata or exact historical environment has been invented.
-
