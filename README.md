@@ -4,6 +4,8 @@ Research code for four-class MRI classification with a residual CNN, BiLSTM and 
 
 ## Start here
 
+**Journal reviewers:** begin with the [Reviewer guide](docs/reviewer_guide.md) and [Reproducibility statement](docs/reproducibility.md).
+
 - [Script index](docs/script_index.md): find preprocessing, training, evaluation and explainability scripts.
 - [Experiment notes](docs/experiment_notes.md): class mappings, missing metadata and differences between protocols.
 - `results/`: saved numerical evidence. `figures/`: saved visual results.
