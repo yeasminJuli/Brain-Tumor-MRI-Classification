@@ -1,2 +1,0 @@
-accuracy,micro_accuracy,macro_class_accuracy,macro_precision,micro_precision,macro_recall,micro_recall,macro_f1,micro_f1,macro_auc,micro_auc,fold,best_epoch,best_val_accuracy,validation_samples,early_stopping_patience,epochs_completed,resumed
-0.9910714285714286,0.9910714285714286,0.9906831867727435,0.990824478693769,0.9910714285714286,0.9906831867727435,0.9910714285714286,0.990751264456406,0.9910714285714286,0.9997931563107116,0.9998256757768467,1,15,0.9910714285714286,5712,10,25,False

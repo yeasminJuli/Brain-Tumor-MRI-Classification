@@ -1,3 +1,0 @@
-ordering,best_val_acc,best_epoch,epochs_run,best_model_path
-column_wise,99.5798319327731,47,57,C:\user\juli\thesis\original_file\othr folders\training_outputs_proposed_column_zigzag\column_wise\best_column_wise.pth
-alternative,99.47478991596638,30,40,C:\user\juli\thesis\original_file\othr folders\training_outputs_proposed_column_zigzag\alternative\best_alternative.pth

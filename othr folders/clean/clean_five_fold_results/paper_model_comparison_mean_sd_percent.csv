@@ -1,2 +1,0 @@
-Model,accuracy,macro_precision,macro_recall,macro_f1,macro_auc
-ResNet50,98.24 ± 0.33,98.22 ± 0.34,98.20 ± 0.34,98.20 ± 0.34,99.92 ± 0.03

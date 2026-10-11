@@ -1,2 +1,0 @@
-Test,Statistic,Degrees of Freedom,p-value,Significant (alpha=0.05),N Matched Folds,Interpretation
-Friedman test across three ordering schemes,5.200000000000003,2,0.0742735782143338,No,5,No overall difference detected

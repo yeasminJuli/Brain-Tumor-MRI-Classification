@@ -1,2 +1,0 @@
-test,metric,models,matched_folds,chi_square,degrees_of_freedom,p_value,Significant?
-Friedman omnibus test,accuracy,5,5,18.400000000000006,4,0.0010306018987383497,Yes
